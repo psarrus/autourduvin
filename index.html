@@ -9,6 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -29,34 +30,36 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <!-- <a class="navbar-brand" href="#">Brand</a> -->
+            <img class="logo" src="images/logo.png" alt="" />
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Link</a></li>
+              <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
+              <li><a href="#">Accueil</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nos vins <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Rouge</a></li>
+                  <li><a href="#">blanc</a></li>
+                  <li><a href="#">Rosé</a></li>
+                  <!-- <li role="separator" class="divider"></li>
                   <li><a href="#">Separated link</a></li>
                   <li role="separator" class="divider"></li>
-                  <li><a href="#">One more separated link</a></li>
+                  <li><a href="#">One more separated link</a></li> -->
                 </ul>
               </li>
+              <li><a href="#">votre panier <i class="fa fa-shopping-basket"></i></a></li>
             </ul>
-            <form class="navbar-form navbar-left" role="search">
+            <!-- <form class="navbar-form navbar-left" role="search">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Search">
               </div>
               <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
+            </form> -->
+            <!-- <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Link</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -68,16 +71,82 @@
                   <li><a href="#">Separated link</a></li>
                 </ul>
               </li>
-            </ul>
+            </ul> -->
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
         </nav>
       </div>
+
       <div class="row">
         <div class="col-md-12">
           <img src="images/vigne.jpg" width="100%" height="300">
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-md-12 presentation">
+          <h2>Notre Domaine</h2>
+          <p>
+              Les vins de Damien, Théo et Pierre sont à l’image de leurs auteurs,
+              amicaux,attachants, populaires. Le travail au Domaine est une quête de
+            perfection à laquelle ils s’attèlent avec ténacité depuis quelques ssemaines.
+            Si le vignoble et son paysage, fiers, rustiques et délicats à la fois,
+            invitent au rêve et à la poésie, les imprévus du travail de la terre forcent
+            l’humilité et rendent parfois l’humour nécessaire…
+
+            Pour les Trois, le vin, c’est le partage, la fraternité, la communauté.
+            Le vin se déguste en compagnie, sur un comptoir improvisé, et crée des
+            liens d’amitié autour de vraies valeurs. La dégustation est colorée et
+            créative: les AOP (Indication d’Origine Protégée) et IGP (Indication
+            Géographique Protégée) se déclinent en 3 couleurs. Au Domaine
+            comme à la boutique mendoise, authentiques et modernes à la fois, on
+            est à la maison. Les mots d’ordre sont tout à trac : le naturel, la chaleur
+            humaine, le Sud… sans oublier l’humour bien sûr !
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 pdtphare">
+          <h2>Nos Meilleures ventes</h2>
+          <div class="row">
+              <div class="col-md-4 pdt">
+                <h3>produit 1</h3>
+
+              </div>
+              <div class="col-md-4 pdt">
+                <h3>produit 2</h3>
+
+              </div>
+              <div class="col-md-4 pdt">
+                <h3>produit 3</h3>
+
+              </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 contact">
+          <h2>Nous contacter</h2>
+             <form class="" method="">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Votre Nom">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Votre E-mail">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="3" placeholder="Votre Message"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">Envoyer</button>
+                </div>
+            </form>
+        </div>
+      </div>
+
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

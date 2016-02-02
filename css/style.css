@@ -1,0 +1,54 @@
+.container-fluid {
+    background-color: #630E2D;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-nav>li {
+    /*width: 150px;
+    height: 80px;*/
+    margin: 0 20px 0 20px;
+}
+.navbar-default .navbar-nav>li:hover {
+    border-radius: 8px;
+    background-color: white;
+    color: #630E2D;
+    font-weight: bold;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+}
+.presentation {
+    background-color: #630E2D;
+    color: white;
+    padding: 0 40px;
+    text-align: justify;
+}
+.presentation h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pdtphare {
+    border: 1px solid black;
+}
+.pdt {
+    height: 250px;
+    border: 1px solid black;
+}
+.row {
+    margin: 30px 0;
+    text-align: center;
+}
+.contact {
+    border: 1px solid black;
+}
+.nom-mail {
+    margin: 10px 0;
+}
+.msg {
+    display: inline-block;
+}
+.btn-contact {
+    display: block;
+}
