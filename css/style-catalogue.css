@@ -1,0 +1,17 @@
+.separ-img {
+	margin-top: 3em;
+}
+
+.note {
+   float: right;
+   color: #aaa;
+   text-decoration: none;
+   transition: color .4s;
+}
+.note:hover,
+.note:focus,
+.note:hover ~ a,
+.note:focus ~ a {
+   color: orange;
+   cursor: pointer;
+}
