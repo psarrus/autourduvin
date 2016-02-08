@@ -3,6 +3,9 @@ function readParameter() {
 	var indiceBouteille = urlParams.paramIndice;
 	var bouteille = liste[indiceBouteille];
 
+	var varTitreAriane = document.getElementById("titre-ariane");
+	varTitreAriane.textContent = bouteille.titre;
+	
 	var varTitre = document.getElementById("titre");
 	varTitre.textContent = bouteille.titre;
 
