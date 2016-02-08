@@ -64,3 +64,7 @@ h4 {
 .margin-filtre {
 	padding: 0;
 }
+
+.nav-fixe {
+	position: fixed;
+}
