@@ -210,4 +210,4 @@ var fiche15 ={
   prix:13,
   img: "photovin/blanc/vin1.png"
 }
-var liste = [fiche1,fiche2,fiche3,fiche4,fiche5,fiche6,fiche7,fiche8,fiche9,fiche10,fiche11,fiche12,fiche13,fiche14,fiche15,]
+var liste = [fiche1,fiche2,fiche3,fiche4,fiche5,fiche6,fiche7,fiche8,fiche9,fiche10,fiche11,fiche12,fiche13,fiche14,fiche15]
