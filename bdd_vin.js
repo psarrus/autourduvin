@@ -1,4 +1,4 @@
-fiche1 ={
+var fiche1 ={
   titre : "Noces d'argent",
   millesime:"AOC CORBIÈRES Rouge Millésime 2010",
   sol:"Argilo-calcaire",
@@ -10,7 +10,7 @@ fiche1 ={
   temperatureduservice: "17° à 18°C.",
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
 }
-fiche2 ={
+var fiche2 ={
   titre : "La Liesse",
   millesime:"AOC CORBIÈRES Rouge Millésime 2010",
   sol:"Argilo-calcaire",
@@ -22,7 +22,7 @@ fiche2 ={
   temperatureduservice: "17° à 18°C.",
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
 }
-fiche3 ={
+var fiche3 ={
   titre : "L'euphorie",
   millesime:"AOC CORBIÈRES Rouge Millésime 2010",
   sol:"Argilo-calcaire",
@@ -34,7 +34,7 @@ fiche3 ={
   temperatureduservice: "17° à 18°C.",
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
 }
-fiche4 ={
+var fiche4 ={
   titre : "Le Gargamelle",
   millesime:"AOC CORBIÈRES Rouge Millésime 2010",
   sol:"Argilo-calcaire",
@@ -46,7 +46,7 @@ fiche4 ={
   temperatureduservice: "17° à 18°C.",
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
 }
-fiche5 ={
+var fiche5 ={
   titre : "Nathalie & Marie",
   millesime:"AOC CORBIÈRES Rouge Millésime 2010",
   sol:"Argilo-calcaire",
@@ -58,7 +58,7 @@ fiche5 ={
   temperatureduservice: "17° à 18°C.",
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
 }
-fiche6 ={
+var fiche6 ={
   titre : "Thomas & Mathieu",
   millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013"
   sol:"Argilo-calcaire",
@@ -70,7 +70,7 @@ fiche6 ={
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
 }
-fiche7 ={
+var fiche7 ={
   titre : "Pietrus",
   millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013"
   sol:"Argilo-calcaire",
@@ -82,7 +82,7 @@ fiche7 ={
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
 }
-fiche8 ={
+var fiche8 ={
   titre : "Le Veyron",
   millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013"
   sol:"Argilo-calcaire",
@@ -94,7 +94,7 @@ fiche8 ={
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
 }
-fiche9 ={
+var fiche9 ={
   titre : "Château du raisin sec",
   millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013"
   sol:"Argilo-calcaire",
@@ -106,7 +106,7 @@ fiche9 ={
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
 }
-fiche10={
+var fiche10={
   titre : "Laetitia & Nadège",
   millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013"
   sol:"Argilo-calcaire",
@@ -118,7 +118,7 @@ fiche10={
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
 }
-fiche11 ={
+var fiche11 ={
   titre : "Le demon de l'Evêque",
   millésime : "AOC CORBIÈRES Blanc Millésime 2014",
   sol:"Argilo-calcaire",
@@ -130,7 +130,7 @@ fiche11 ={
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
 }
-fiche12 ={
+var fiche12 ={
   titre : "Lucie & Anne",
   millésime : "AOC CORBIÈRES Blanc Millésime 2014",
   sol:"Argilo-calcaire",
@@ -143,7 +143,7 @@ fiche12 ={
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
 }
 
-fiche13 ={
+var fiche13 ={
   titre : "Le Jonis",
   millésime : "AOC CORBIÈRES Blanc Millésime 2014",
   sol:"Argilo-calcaire",
@@ -155,7 +155,7 @@ fiche13 ={
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
 }
-fiche14 ={
+var fiche14 ={
   titre : "Le Soulier",
   millésime : "AOC CORBIÈRES Blanc Millésime 2014",
   sol:"Argilo-calcaire",
@@ -167,7 +167,7 @@ fiche14 ={
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
 }
-fiche15 ={
+var fiche15 ={
   titre : "La Machine",
   millésime : "AOC CORBIÈRES Blanc Millésime 2014",
   sol:"Argilo-calcaire",
