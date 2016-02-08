@@ -15,3 +15,52 @@
    color: orange;
    cursor: pointer;
 }
+
+.border-article {
+	margin: 1em 0;
+	-moz-box-shadow: 1px 1px 5px 0px #7F123A;
+	-webkit-box-shadow: 1px 1px 5px 0px #7F123A;
+	-o-box-shadow: 1px 1px 5px 0px #7F123A;
+	box-shadow: 1px 1px 5px 0px #7F123A;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#7F123A, Direction=134, Strength=10);
+}
+
+.border-filtre {
+	-moz-box-shadow: 1px 1px 5px 0px #7F123A;
+	-webkit-box-shadow: 1px 1px 5px 0px #7F123A;
+	-o-box-shadow: 1px 1px 5px 0px #7F123A;
+	box-shadow: 1px 1px 5px 0px #7F123A;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#7F123A, Direction=134, Strength=10);
+	margin: 1em 0;
+}
+
+#nav-filtre {
+	list-style: none;
+	margin: 1em 0;
+}
+
+#nav-filtre a {
+	color: black;
+}
+
+#nav-filtre a:hover {
+	color: blue;
+	text-decoration: none;
+}
+
+h4 {
+	font-family: "Tangerine";
+	font-size: 3em;
+}
+
+.reglage-survol a {
+	color: #3C403E;
+}
+
+.reglage-survol a:hover {
+	text-decoration: none;
+}
+
+.margin-filtre {
+	padding: 0;
+}
