@@ -27,8 +27,8 @@ function readParameter() {
 	var varPotentiel = document.getElementById("potentieldegarde");
 	varPotentiel.textContent = bouteille.potentieldegarde;
 
-	var varTemperature = document.getElementById("temperaturedegarde");
-	varTemperature.textContent = bouteille.temperaturedegarde;
+	var varTemperature = document.getElementById("temperatureduservice");
+	varTemperature.textContent = bouteille.temperatureduservice;
 
 	var varCulinaire = document.getElementById("accordsculinaires");
 	varCulinaire.textContent = bouteille.accordsculinaires;
