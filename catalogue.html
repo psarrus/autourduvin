@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="css/style-catalogue.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-  <script src="js/fake_db_tempo.js"></script>
-  <script src="js/script-catalogue.js"></script>
+  <script src="bdd_vin.js"></script>
+  <script src="js/script.js"></script>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,7 +21,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
     </head>
-    <body>
+    <body onload="readParameter()">
       <div class="container">
         <div class="row">
           <nav class="navbar navbar-default">
@@ -73,7 +73,7 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="border-article reglage-survol">
-                  <a href="#">
+                  <a href="fiche.html?paramIndice=0">
                     <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
                     <h4>Nom de la bouteille</h4>
                     <p>Description de la bouteille</p>
@@ -86,7 +86,7 @@
               </div>
               <div class="col-md-4">
                 <div class="border-article reglage-survol">
-                  <a href="#">
+                  <a href="fiche.html?paramIndice=1">
                     <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
                     <h4>Nom de la bouteille</h4>
                     <p>Description de la bouteille</p>
@@ -99,48 +99,7 @@
               </div>
               <div class="col-md-4">
                 <div class="border-article reglage-survol">
-                  <a href="#">
-                    <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
-                    <h4>Nom de la bouteille</h4>
-                    <p>Description de la bouteille</p>
-                    <div class="row">
-                      <div class="col-md-6"><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></div>
-                      <div class="col-md-6"><p>Prix public</p></div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="border-article reglage-survol">
-                  <a href="#">
-                    <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
-                    <h4>Nom de la bouteille</h4>
-                    <p>Description de la bouteille</p>
-                    <div class="row">
-                      <div class="col-md-6"><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></div>
-                      <div class="col-md-6"><p>Prix public</p></div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="border-article reglage-survol">
-                  <a href="#">
-                    <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
-                    <h4>Nom de la bouteille</h4>
-                    <p>Description de la bouteille</p>
-                    <div class="row">
-                      <div class="col-md-6"><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></div>
-                      <div class="col-md-6"><p>Prix public</p></div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="border-article reglage-survol">
-                  <a href="#">
+                  <a href="fiche.html?paramIndice=2">
                     <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
                     <h4>Nom de la bouteille</h4>
                     <p>Description de la bouteille</p>
@@ -155,7 +114,7 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="border-article reglage-survol">
-                  <a href="#">
+                  <a href="fiche.html?paramIndice=3">
                     <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
                     <h4>Nom de la bouteille</h4>
                     <p>Description de la bouteille</p>
@@ -168,7 +127,7 @@
               </div>
               <div class="col-md-4">
                 <div class="border-article reglage-survol">
-                  <a href="#">
+                  <a href="fiche.html?paramIndice=4">
                     <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
                     <h4>Nom de la bouteille</h4>
                     <p>Description de la bouteille</p>
@@ -181,48 +140,7 @@
               </div>
               <div class="col-md-4">
                 <div class="border-article reglage-survol">
-                  <a href="#">
-                    <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
-                    <h4>Nom de la bouteille</h4>
-                    <p>Description de la bouteille</p>
-                    <div class="row">
-                      <div class="col-md-6"><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></div>
-                      <div class="col-md-6"><p>Prix public</p></div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="border-article reglage-survol">
-                  <a href="#">
-                    <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
-                    <h4>Nom de la bouteille</h4>
-                    <p>Description de la bouteille</p>
-                    <div class="row">
-                      <div class="col-md-6"><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></div>
-                      <div class="col-md-6"><p>Prix public</p></div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="border-article reglage-survol">
-                  <a href="#">
-                    <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
-                    <h4>Nom de la bouteille</h4>
-                    <p>Description de la bouteille</p>
-                    <div class="row">
-                      <div class="col-md-6"><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></div>
-                      <div class="col-md-6"><p>Prix public</p></div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="border-article reglage-survol">
-                  <a href="#">
+                  <a href="fiche.html?paramIndice=5">
                     <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
                     <h4>Nom de la bouteille</h4>
                     <p>Description de la bouteille</p>
@@ -237,7 +155,7 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="border-article reglage-survol">
-                  <a href="#">
+                  <a href="fiche.html?paramIndice=6">
                     <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
                     <h4>Nom de la bouteille</h4>
                     <p>Description de la bouteille</p>
@@ -250,7 +168,7 @@
               </div>
               <div class="col-md-4">
                 <div class="border-article reglage-survol">
-                  <a href="#">
+                  <a href="fiche.html?paramIndice=7">
                     <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
                     <h4>Nom de la bouteille</h4>
                     <p>Description de la bouteille</p>
@@ -263,7 +181,89 @@
               </div>
               <div class="col-md-4">
                 <div class="border-article reglage-survol">
-                  <a href="#">
+                  <a href="fiche.html?paramIndice=8">
+                    <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
+                    <h4>Nom de la bouteille</h4>
+                    <p>Description de la bouteille</p>
+                    <div class="row">
+                      <div class="col-md-6"><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></div>
+                      <div class="col-md-6"><p>Prix public</p></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="border-article reglage-survol">
+                  <a href="fiche.html?paramIndice=9">
+                    <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
+                    <h4>Nom de la bouteille</h4>
+                    <p>Description de la bouteille</p>
+                    <div class="row">
+                      <div class="col-md-6"><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></div>
+                      <div class="col-md-6"><p>Prix public</p></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="border-article reglage-survol">
+                  <a href="fiche.html?paramIndice=10">
+                    <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
+                    <h4>Nom de la bouteille</h4>
+                    <p>Description de la bouteille</p>
+                    <div class="row">
+                      <div class="col-md-6"><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></div>
+                      <div class="col-md-6"><p>Prix public</p></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="border-article reglage-survol">
+                  <a href="fiche.html?paramIndice=11">
+                    <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
+                    <h4>Nom de la bouteille</h4>
+                    <p>Description de la bouteille</p>
+                    <div class="row">
+                      <div class="col-md-6"><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></div>
+                      <div class="col-md-6"><p>Prix public</p></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="border-article reglage-survol">
+                  <a href="fiche.html?paramIndice=12">
+                    <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
+                    <h4>Nom de la bouteille</h4>
+                    <p>Description de la bouteille</p>
+                    <div class="row">
+                      <div class="col-md-6"><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></div>
+                      <div class="col-md-6"><p>Prix public</p></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="border-article reglage-survol">
+                  <a href="fiche.html?paramIndice=13">
+                    <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
+                    <h4>Nom de la bouteille</h4>
+                    <p>Description de la bouteille</p>
+                    <div class="row">
+                      <div class="col-md-6"><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></div>
+                      <div class="col-md-6"><p>Prix public</p></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="border-article reglage-survol">
+                  <a href="fiche.html?paramIndice=14">
                     <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
                     <h4>Nom de la bouteille</h4>
                     <p>Description de la bouteille</p>
