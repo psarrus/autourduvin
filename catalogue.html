@@ -22,7 +22,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
     </head>
-    <body>
+    <body onload="displayArticle()">
       <div class="container">
         <div class="row">
           <nav class="navbar navbar-default">
@@ -76,11 +76,11 @@
                 <div class="border-article reglage-survol">
                   <a href="fiche.html?paramIndice=0">
                     <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
-                    <h4>Nom de la bouteille</h4>
-                    <p>Description de la bouteille</p>
+                    <h4 id="trouNom"></h4>
+                    <p id="trouDescription"></p>
                     <div class="row">
                       <div class="col-md-6"><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></div>
-                      <div class="col-md-6"><p>Prix public</p></div>
+                      <div class="col-md-6"><p><span id="trouPrix"></span>€</p></div>
                     </div>
                   </a>
                 </div>
@@ -89,7 +89,7 @@
                 <div class="border-article reglage-survol">
                   <a href="fiche.html?paramIndice=1">
                     <img src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
-                    <h4>Nom de la bouteille</h4>
+                    <h4 id="trouNom"></h4>
                     <p>Description de la bouteille</p>
                     <div class="row">
                       <div class="col-md-6"><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></div>

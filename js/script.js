@@ -42,11 +42,12 @@ function readParameter() {
 	var varImage = document.getElementById("img");
 	varImage.src = bouteille.img;
 }
-	// var indiceStagiare = urlParams.paramIndice;
-	// var stagiaire = promo[indiceStagiare];
-	// var varNom = document.getElementById("trouNom");
-	// varNom.innerHTML = stagiaire.nom;
-	// var varDescription = document.getElementById("trouDescription");
-	// varDescription.innerHTML = stagiaire.description;
-	// var varImage = document.getElementById("trouPhoto");
-	// varImage.src = stagiaire.photo;
+
+function displayArticle() {
+	for (var i = 0; i < liste.length; i++) {
+		var varNom = document.getElementById("trouNom");
+		varNom.textContent = liste[i].titre;
+		var varPrix = document.getElementById("trouPrix");
+		varPrix.textContent = liste[i].prix;
+	}
+}
