@@ -75,8 +75,13 @@ var fiche6 ={
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
   vignification : "Raisin issu d’une exploitation qualifiée au titre de l’agriculture raisonnée. Récolte manuelle. Pressurage direct et thermorégulation.",
+<<<<<<< HEAD
   degustation : "Jolie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
   potentieldegarde:"N.C",
+=======
+  degustation : "olie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
+  potentieldegarde:"",
+>>>>>>> 75047504ce3b611a6299fc8972687e1eaf43a547
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
   prix:17,
@@ -89,8 +94,13 @@ var fiche7 ={
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
   vignification : "Raisin issu d’une exploitation qualifiée au titre de l’agriculture raisonnée. Récolte manuelle. Pressurage direct et thermorégulation.",
+<<<<<<< HEAD
   degustation : "Jolie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
   potentieldegarde:"N.C",
+=======
+  degustation : "olie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
+  potentieldegarde:"",
+>>>>>>> 75047504ce3b611a6299fc8972687e1eaf43a547
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
   prix:12,
@@ -103,8 +113,13 @@ var fiche8 ={
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
   vignification : "Raisin issu d’une exploitation qualifiée au titre de l’agriculture raisonnée. Récolte manuelle. Pressurage direct et thermorégulation.",
+<<<<<<< HEAD
   degustation : "Jolie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
   potentieldegarde:"N.C",
+=======
+  degustation : "olie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
+  potentieldegarde:"",
+>>>>>>> 75047504ce3b611a6299fc8972687e1eaf43a547
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
   prix:14,
@@ -118,8 +133,13 @@ var fiche9 ={
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
   vignification : "Raisin issu d’une exploitation qualifiée au titre de l’agriculture raisonnée. Récolte manuelle. Pressurage direct et thermorégulation.",
+<<<<<<< HEAD
   degustation : "Jolie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
   potentieldegarde:"N.C",
+=======
+  degustation : "olie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
+  potentieldegarde:"",
+>>>>>>> 75047504ce3b611a6299fc8972687e1eaf43a547
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
   prix:16,
@@ -132,8 +152,13 @@ var fiche10={
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
   vignification : "Raisin issu d’une exploitation qualifiée au titre de l’agriculture raisonnée. Récolte manuelle. Pressurage direct et thermorégulation.",
+<<<<<<< HEAD
   degustation : "Jolie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
   potentieldegarde:"N.C",
+=======
+  degustation : "olie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
+  potentieldegarde:"",
+>>>>>>> 75047504ce3b611a6299fc8972687e1eaf43a547
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
   prix:17,
@@ -147,7 +172,7 @@ var fiche11 ={
   degre:"12%vol.",
   vignification : "N.C",
   degustation : "Jolie couleur fraiche et de nuance or pâle. Bonne puissance aromatique avec des notes de fleurs blanches et de pêche. Bouche ronde et savoureuse avec une jolie persistance des arômes.",
-  potentieldegarde:"N.C",
+  potentieldegarde:"",
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
   prix:12,
@@ -161,7 +186,7 @@ var fiche12 ={
   degre:"12%vol.",
   vignification : "N.C",
   degustation : "Jolie couleur fraiche et de nuance or pâle. Bonne puissance aromatique avec des notes de fleurs blanches et de pêche. Bouche ronde et savoureuse avec une jolie persistance des arômes.",
-  potentieldegarde:"N.C",
+  potentieldegarde:"",
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
   prix:11,
@@ -176,7 +201,7 @@ var fiche13 ={
   degre:"12%vol.",
   vignification : "N.C",
   degustation : "Jolie couleur fraiche et de nuance or pâle. Bonne puissance aromatique avec des notes de fleurs blanches et de pêche. Bouche ronde et savoureuse avec une jolie persistance des arômes.",
-  potentieldegarde:"N.C",
+  potentieldegarde:"",
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
   prix:12,
@@ -190,7 +215,7 @@ var fiche14 ={
   degre:"12%vol.",
   vignification : "N.C",
   degustation : "Jolie couleur fraiche et de nuance or pâle. Bonne puissance aromatique avec des notes de fleurs blanches et de pêche. Bouche ronde et savoureuse avec une jolie persistance des arômes.",
-  potentieldegarde:"N.C",
+  potentieldegarde:"",
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
   prix:16,
@@ -204,7 +229,7 @@ var fiche15 ={
   degre:"12%vol.",
   vignification : "N.C",
   degustation : "Jolie couleur fraiche et de nuance or pâle. Bonne puissance aromatique avec des notes de fleurs blanches et de pêche. Bouche ronde et savoureuse avec une jolie persistance des arômes.",
-  potentieldegarde:"N.C",
+  potentieldegarde:"",
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
   prix:13,
