@@ -17,6 +17,7 @@
 }
 .violet{
   background-color: #630E2D;
+  text-align: center;
 }
 .padding{
   padding: 8em 4em 4em 0;
@@ -54,6 +55,10 @@ h2{
   background-color: #630e2d;
   color: white;
   padding: 0.8em;
+}
+.panier a{
+  text-decoration: none;
+  color: white;
 }
 .panier a:hover{
   text-decoration:none;

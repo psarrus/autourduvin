@@ -9,6 +9,8 @@ var fiche1 ={
   potentieldegarde:"12 à 15 ans.",
   temperatureduservice: "17° à 18°C.",
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
+  prix:12,
+  img: "photovin/rouge/vin1.png"
 }
 var fiche2 ={
   titre : "La Liesse",
@@ -21,6 +23,8 @@ var fiche2 ={
   potentieldegarde:"12 à 15 ans.",
   temperatureduservice: "17° à 18°C.",
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
+  prix:18,
+  img: "photovin/rouge/vin2.png"
 }
 var fiche3 ={
   titre : "L'euphorie",
@@ -33,6 +37,8 @@ var fiche3 ={
   potentieldegarde:"12 à 15 ans.",
   temperatureduservice: "17° à 18°C.",
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
+  prix:17,
+  img: "photovin/rouge/vin3.png"
 }
 var fiche4 ={
   titre : "Le Gargamelle",
@@ -45,6 +51,8 @@ var fiche4 ={
   potentieldegarde:"12 à 15 ans.",
   temperatureduservice: "17° à 18°C.",
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
+  prix:15,
+  img: "photovin/rouge/vin4.png"
 }
 var fiche5 ={
   titre : "Nathalie & Marie",
@@ -57,10 +65,12 @@ var fiche5 ={
   potentieldegarde:"12 à 15 ans.",
   temperatureduservice: "17° à 18°C.",
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
+  prix:19,
+  img: "photovin/rouge/vin5.png"
 }
 var fiche6 ={
   titre : "Thomas & Mathieu",
-  millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013"
+  millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013",
   sol:"Argilo-calcaire",
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
@@ -69,10 +79,12 @@ var fiche6 ={
   potentieldegarde:"",
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
+  prix:17,
+  img: "photovin/rosé/vin1.png"
 }
 var fiche7 ={
   titre : "Pietrus",
-  millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013"
+  millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013",
   sol:"Argilo-calcaire",
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
@@ -81,10 +93,12 @@ var fiche7 ={
   potentieldegarde:"",
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
+  prix:12,
+  img: "photovin/rosé/vin2.png"
 }
 var fiche8 ={
   titre : "Le Veyron",
-  millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013"
+  millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013",
   sol:"Argilo-calcaire",
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
@@ -93,10 +107,13 @@ var fiche8 ={
   potentieldegarde:"",
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
+  prix:14,
+  img: "photovin/rosé/vin3.png"
 }
+
 var fiche9 ={
   titre : "Château du raisin sec",
-  millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013"
+  millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013",
   sol:"Argilo-calcaire",
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
@@ -105,10 +122,12 @@ var fiche9 ={
   potentieldegarde:"",
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
+  prix:16,
+  img: "photovin/rosé/vin4.png"
 }
 var fiche10={
   titre : "Laetitia & Nadège",
-  millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013"
+  millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013",
   sol:"Argilo-calcaire",
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
@@ -117,6 +136,8 @@ var fiche10={
   potentieldegarde:"",
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
+  prix:17,
+  img: "photovin/rosé/vin5.png"
 }
 var fiche11 ={
   titre : "Le demon de l'Evêque",
@@ -129,6 +150,8 @@ var fiche11 ={
   potentieldegarde:"",
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
+  prix:12,
+  img: "photovin/blanc/vin1.png"
 }
 var fiche12 ={
   titre : "Lucie & Anne",
@@ -141,6 +164,8 @@ var fiche12 ={
   potentieldegarde:"",
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
+  prix:11,
+  img: "photovin/blanc/vin2.png"
 }
 
 var fiche13 ={
@@ -154,6 +179,8 @@ var fiche13 ={
   potentieldegarde:"",
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
+  prix:12,
+  img: "photovin/blanc/vin3.png"
 }
 var fiche14 ={
   titre : "Le Soulier",
@@ -166,6 +193,8 @@ var fiche14 ={
   potentieldegarde:"",
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
+  prix:16,
+  img: "photovin/blanc/vin2.png"
 }
 var fiche15 ={
   titre : "La Machine",
@@ -178,5 +207,7 @@ var fiche15 ={
   potentieldegarde:"",
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
+  prix:13,
+  img: "photovin/blanc/vin1.png"
 }
 var liste = [fiche1,fiche2,fiche3,fiche4,fiche5,fiche6,fiche7,fiche8,fiche9,fiche10,fiche11,fiche12,fiche13,fiche14,fiche15,]
