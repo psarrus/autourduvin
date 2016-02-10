@@ -8,7 +8,6 @@ function readParameter() {
 
 	var varTitre = document.getElementById("titre");
 	varTitre.textContent = bouteille.titre;
-	designation = bouteille.titre;
 
 	var varMillesime = document.getElementById("millesime");
 	varMillesime.textContent = bouteille.millesime;
@@ -50,5 +49,20 @@ function displayArticle() {
 		varNom.textContent = liste[i].titre;
 		var varPrix = document.getElementById("trouPrix");
 		varPrix.textContent = liste[i].prix;
+	}
+}
+
+var quantite = 0;
+function plus(){
+	quantite +=  1
+	var quantiteInput = document.getElementById("quantity");
+	quantiteInput.innerHTML = quantite ;
+}
+function moins(){
+	if (quantite > 0) {
+
+		quantite -=  1
+		var quantiteInput = document.getElementById("quantity");
+		quantiteInput.innerHTML = quantite ;
 	}
 }

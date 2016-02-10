@@ -1,1 +1,0 @@
-var mon_panier = [];
