@@ -44,13 +44,47 @@ function readParameter() {
 }
 
 function displayArticle() {
+	console.log("Hello world!");
+
+	var affectDiv = document.getElementById('balise-catalogue');
+
+	var createUl = document.createElement("ul");
+	affectDiv.appendChild(createUl);
+
 	for (var i = 0; i < liste.length; i++) {
-		var varNom = document.getElementById("trouNom");
-		varNom.textContent = liste[i].titre;
-		var varPrix = document.getElementById("trouPrix");
-		varPrix.textContent = liste[i].prix;
+		var createLi = document.createElement("li");
+		createUl.appendChild(createLi);
+
+		var createLien = document.createElement("a");
+		console.log(liste[i].lien)
+		createLien.href = liste[i].lien;
+		createLi.appendChild(createLien);
+
+		var createImg = document.createElement("img");
+		createImg.src = liste[i].img;
+		createLien.appendChild(createImg);
+
+		var createTitre = document.createElement("h4");
+		createTitre.textContent = liste[i].titre;
+		createLien.appendChild(createTitre);
+
+		var createMillesime = document.createElement("p");
+		createMillesime.textContent = liste[i].millesime;
+		createLien.appendChild(createMillesime);
+
+		var createPrix = document.createElement("p");
+		createPrix.textContent = liste[i].prix + "€";
+		createLien.appendChild(createPrix);
+
+		for (var y = 0; y <= 5; i++) {
+			var createPi = document.createElement("p");
+			
+		}
 	}
 }
+
+// <i class="fa fa-star-o"></i>
+
 function plus(){
 	// var quantite = document.getElementById("quantity").innerHTML;
 	document.getElementById("quantity").value ++;

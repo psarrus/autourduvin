@@ -10,7 +10,8 @@ var fiche1 ={
   temperatureduservice: "17° à 18°C.",
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
   prix:12,
-  img: "photovin/rouge/vin1.png"
+  img: "photovin/rouge/vin1.png",
+  lien : "../fiche.html?paramIndice=0",
 }
 var fiche2 ={
   titre : "La Liesse",
@@ -24,7 +25,8 @@ var fiche2 ={
   temperatureduservice: "17° à 18°C.",
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
   prix:18,
-  img: "photovin/rouge/vin2.png"
+  img: "photovin/rouge/vin2.png",
+  lien : "fiche.html?paramIndice=1",
 }
 var fiche3 ={
   titre : "L'euphorie",
@@ -38,7 +40,8 @@ var fiche3 ={
   temperatureduservice: "17° à 18°C.",
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
   prix:17,
-  img: "photovin/rouge/vin3.png"
+  img: "photovin/rouge/vin3.png",
+  lien : "fiche.html?paramIndice=2",
 }
 var fiche4 ={
   titre : "Le Gargamelle",
@@ -52,7 +55,8 @@ var fiche4 ={
   temperatureduservice: "17° à 18°C.",
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
   prix:15,
-  img: "photovin/rouge/vin4.png"
+  img: "photovin/rouge/vin4.png",
+  lien : "fiche.html?paramIndice=3",
 }
 var fiche5 ={
   titre : "Nathalie & Marie",
@@ -66,7 +70,8 @@ var fiche5 ={
   temperatureduservice: "17° à 18°C.",
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
   prix:19,
-  img: "photovin/rouge/vin5.png"
+  img: "photovin/rouge/vin5.png",
+  lien : "fiche.html?paramIndice=4",
 }
 var fiche6 ={
   titre : "Thomas & Mathieu",
@@ -75,17 +80,13 @@ var fiche6 ={
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
   vignification : "Raisin issu d’une exploitation qualifiée au titre de l’agriculture raisonnée. Récolte manuelle. Pressurage direct et thermorégulation.",
-<<<<<<< HEAD
   degustation : "Jolie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
   potentieldegarde:"N.C",
-=======
-  degustation : "olie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
-  potentieldegarde:"",
->>>>>>> 75047504ce3b611a6299fc8972687e1eaf43a547
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
   prix:17,
-  img: "photovin/rosé/vin1.png"
+  img: "photovin/rosé/vin1.png",
+  lien : "fiche.html?paramIndice=5",
 }
 var fiche7 ={
   titre : "Pietrus",
@@ -94,17 +95,13 @@ var fiche7 ={
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
   vignification : "Raisin issu d’une exploitation qualifiée au titre de l’agriculture raisonnée. Récolte manuelle. Pressurage direct et thermorégulation.",
-<<<<<<< HEAD
   degustation : "Jolie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
   potentieldegarde:"N.C",
-=======
-  degustation : "olie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
-  potentieldegarde:"",
->>>>>>> 75047504ce3b611a6299fc8972687e1eaf43a547
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
   prix:12,
-  img: "photovin/rosé/vin2.png"
+  img: "photovin/rosé/vin2.png",
+  lien : "fiche.html?paramIndice=6",
 }
 var fiche8 ={
   titre : "Le Veyron",
@@ -113,17 +110,13 @@ var fiche8 ={
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
   vignification : "Raisin issu d’une exploitation qualifiée au titre de l’agriculture raisonnée. Récolte manuelle. Pressurage direct et thermorégulation.",
-<<<<<<< HEAD
   degustation : "Jolie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
   potentieldegarde:"N.C",
-=======
-  degustation : "olie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
-  potentieldegarde:"",
->>>>>>> 75047504ce3b611a6299fc8972687e1eaf43a547
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
   prix:14,
-  img: "photovin/rosé/vin3.png"
+  img: "photovin/rosé/vin3.png",
+  lien : "fiche.html?paramIndice=7",
 }
 
 var fiche9 ={
@@ -133,17 +126,13 @@ var fiche9 ={
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
   vignification : "Raisin issu d’une exploitation qualifiée au titre de l’agriculture raisonnée. Récolte manuelle. Pressurage direct et thermorégulation.",
-<<<<<<< HEAD
   degustation : "Jolie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
   potentieldegarde:"N.C",
-=======
-  degustation : "olie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
-  potentieldegarde:"",
->>>>>>> 75047504ce3b611a6299fc8972687e1eaf43a547
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
   prix:16,
-  img: "photovin/rosé/vin4.png"
+  img: "photovin/rosé/vin4.png",
+  lien : "fiche.html?paramIndice=8",
 }
 var fiche10={
   titre : "Laetitia & Nadège",
@@ -152,17 +141,13 @@ var fiche10={
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
   vignification : "Raisin issu d’une exploitation qualifiée au titre de l’agriculture raisonnée. Récolte manuelle. Pressurage direct et thermorégulation.",
-<<<<<<< HEAD
   degustation : "Jolie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
   potentieldegarde:"N.C",
-=======
-  degustation : "olie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
-  potentieldegarde:"",
->>>>>>> 75047504ce3b611a6299fc8972687e1eaf43a547
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
   prix:17,
-  img: "photovin/rosé/vin5.png"
+  img: "photovin/rosé/vin5.png",
+  lien : "fiche.html?paramIndice=9",
 }
 var fiche11 ={
   titre : "Le demon de l'Evêque",
@@ -176,7 +161,8 @@ var fiche11 ={
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
   prix:12,
-  img: "photovin/blanc/vin1.png"
+  img: "photovin/blanc/vin1.png",
+  lien : "fiche.html?paramIndice=10",
 }
 var fiche12 ={
   titre : "Lucie & Anne",
@@ -190,7 +176,8 @@ var fiche12 ={
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
   prix:11,
-  img: "photovin/blanc/vin2.png"
+  img: "photovin/blanc/vin2.png",
+  lien : "fiche.html?paramIndice=11",
 }
 
 var fiche13 ={
@@ -205,7 +192,8 @@ var fiche13 ={
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
   prix:12,
-  img: "photovin/blanc/vin3.png"
+  img: "photovin/blanc/vin3.png",
+  lien : "fiche.html?paramIndice=12",
 }
 var fiche14 ={
   titre : "Le Soulier",
@@ -219,7 +207,8 @@ var fiche14 ={
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
   prix:16,
-  img: "photovin/blanc/vin2.png"
+  img: "photovin/blanc/vin2.png",
+  lien : "fiche.html?paramIndice=13",
 }
 var fiche15 ={
   titre : "La Machine",
@@ -233,6 +222,7 @@ var fiche15 ={
   temperatureduservice: "6° - 8°C.",
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
   prix:13,
-  img: "photovin/blanc/vin1.png"
+  img: "photovin/blanc/vin1.png",
+  lien : "fiche.html?paramIndice=14",
 }
 var liste = [fiche1,fiche2,fiche3,fiche4,fiche5,fiche6,fiche7,fiche8,fiche9,fiche10,fiche11,fiche12,fiche13,fiche14,fiche15]
