@@ -51,12 +51,18 @@ function displayArticle() {
 		varPrix.textContent = liste[i].prix;
 	}
 }
-function plus(){
-	// var quantite = document.getElementById("quantity").innerHTML;
-	document.getElementById("quantity").value ++;
 
-	// console.log(qte);
+var quantite = 0;
+function plus(){
+	quantite +=  1
+	var quantiteInput = document.getElementById("quantity");
+	quantiteInput.innerHTML = quantite ;
 }
 function moins(){
+	if (quantite > 0) {
 
+		quantite -=  1
+		var quantiteInput = document.getElementById("quantity");
+		quantiteInput.innerHTML = quantite ;
+	}
 }
