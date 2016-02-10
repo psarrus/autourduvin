@@ -20,54 +20,56 @@
     <!-- <h1>Fiche produit</h1> -->
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 no-padding">
 
           <ol class="breadcrumb">
             <li><a class="arianne" href="catalogue.html">Catalogue</a></li>
               <li class="active" id="titre-ariane"></li>
           </ol>
-          <div class="right">
-            <img id="img" class="img-responsive" src="" alt="" />
-          </div>
-        <div class="violet">
-
-          <h2 id="titre" class="center"></h2>
-          <span id="millesime" class="grey center"></span>
-        </div>
-          <h3>Description</h3>
-          <p><span class="gras">SOL </span><span id="sol"></span></p>
-          <p><span class="gras">CÉPAGES </span><span id="cepages"></span></p>
-          <p><span class="gras">DEGRÉ </span><span id="degre"></span></p>
-          <p><span class="gras">VIGNIFICATION </span><span id="vignification"></span></p>
-          <p><span class="gras">DÉGUSTATION </span><span id="degustation"></span></p>
-          <p><span class="gras">POTENTIEL DE GARDE </span><span id="potentieldegarde"></span></p>
-          <p><span class="gras">TEMPÉRATURE DE SERVICE </span><span id="temperatureduservice"></span></p>
-          <p><span class="gras">ACCORDS CULINAIRES </span><span id="accordsculinaires"></span></p>
         </div>
       </div>
+        <div class="row">
+              <div class="col-md-12 violet">
+                <h2 id="titre" class="center"></h2>
+                <span id="millesime" class="grey center"></span>
+              </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10">
+            <h3>Description</h3>
+            <p><span class="gras uppercase">sol: </span><span id="sol"></span></p>
+            <p><span class="gras uppercase">cépages: </span><span id="cepages"></span></p>
+            <p><span class="gras uppercase">degré: </span><span id="degre"></span></p>
+            <p><span class="gras uppercase">vignification: </span><span id="vignification"></span></p>
+            <p><span class="gras uppercase">dégustation: </span><span id="degustation"></span></p>
+            <p><span class="gras uppercase">potentiel de garde: </span><span id="potentieldegarde"></span></p>
+            <p><span class="gras uppercase">température de servie: </span><span id="temperatureduservice"></span></p>
+            <p><span class="gras uppercase">accords culinaires: </span><span id="accordsculinaires"></span></p>
+          </div>
+          <div class="col-md-2 right bouteille">
+            <img id="img"  src="" alt="" />
+          </div>
+        </div>
         <div class="fond">
-          <div class="row">
-
-              <div class="col-md-4 center">
+          <div class="row zone-panier">
+            <div class="col-md-4 center">
                 <h3>Prix</h3>
                 <span id="prix" class="prix"></span><span> €</span>
-
-              </div>
-              <div class="col-md-4 center">
-                <h3>Quantité</h3>
+            </div>
+            <div class="col-md-4 center">
+              <h3>Quantité</h3>
                 <div class="button">
-                  <button  class="moins" type="button" name="button">-</button>
-                  <button class="nbr" type="text" name="button">0</button>
-                  <button class="plus" type="button" name="button">+</button>
+                  <button  onclick="moins()"class="moins" type="button" name="button">-</button>
+                  <button id="quantity" class="nbr" type="text" name="button">0</button>
+                  <button onclick="plus()"class="plus" type="button" name="button">+</button>
                 </div>
-              </div>
-              <div class="col-md-4 panier">
-                <a href="#" class="ajout"><i class="fa fa-shopping-basket"></i>Ajouter</a>
-              </div>
             </div>
+            <div class="col-md-4 panier">
+              <a onclick="ajoutPanier()" href="#" class="ajout"><i class="fa fa-shopping-basket"></i>Ajouter</a>
             </div>
+          </div>
+        </div>
       <div class="row">
-
         <div class="col-md-12">
           <h3>Avis</h3>
           <a class="note" href=""><i class="fa fa-star-o"></i></a>
@@ -78,7 +80,7 @@
           <textarea class="form-control" rows="3"></textarea>
         </div>
       </div>
-
+  </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>

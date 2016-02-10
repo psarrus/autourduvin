@@ -5,7 +5,7 @@ function readParameter() {
 
 	var varTitreAriane = document.getElementById("titre-ariane");
 	varTitreAriane.textContent = bouteille.titre;
-	
+
 	var varTitre = document.getElementById("titre");
 	varTitre.textContent = bouteille.titre;
 
@@ -50,4 +50,13 @@ function displayArticle() {
 		var varPrix = document.getElementById("trouPrix");
 		varPrix.textContent = liste[i].prix;
 	}
+}
+function plus(){
+	// var quantite = document.getElementById("quantity").innerHTML;
+	document.getElementById("quantity").value ++;
+
+	// console.log(qte);
+}
+function moins(){
+
 }
