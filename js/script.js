@@ -78,7 +78,7 @@ function displayArticle() {
 
 		for (var y = 0; y <= 5; i++) {
 			var createPi = document.createElement("p");
-			
+			createLien.appendChild(createPi);
 		}
 	}
 }
