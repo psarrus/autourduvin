@@ -5,9 +5,10 @@ function readParameter() {
 
 	var varTitreAriane = document.getElementById("titre-ariane");
 	varTitreAriane.textContent = bouteille.titre;
-	
+
 	var varTitre = document.getElementById("titre");
 	varTitre.textContent = bouteille.titre;
+	designation = bouteille.titre;
 
 	var varMillesime = document.getElementById("millesime");
 	varMillesime.textContent = bouteille.millesime;
@@ -50,4 +51,11 @@ function displayArticle() {
 		var varPrix = document.getElementById("trouPrix");
 		varPrix.textContent = liste[i].prix;
 	}
+}
+
+function ajoutPanier() {
+	mon_panier.push(ligne = {
+		produit: designation,
+		quantité:,
+	})
 }
