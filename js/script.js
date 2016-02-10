@@ -52,10 +52,3 @@ function displayArticle() {
 		varPrix.textContent = liste[i].prix;
 	}
 }
-
-function ajoutPanier() {
-	mon_panier.push(ligne = {
-		produit: designation,
-		quantité:,
-	})
-}
