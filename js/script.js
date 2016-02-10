@@ -82,15 +82,25 @@ function displayArticle() {
 		}
 	}
 }
-
 // <i class="fa fa-star-o"></i>
 
 function plus(){
 	// var quantite = document.getElementById("quantity").innerHTML;
 	document.getElementById("quantity").value ++;
 
-	// console.log(qte);
-}
-function moins(){
+	var quantite = 0;
 
+function plus(){
+	quantite +=  1
+	var quantiteInput = document.getElementById("quantity");
+	quantiteInput.innerHTML = quantite ;
+}
+
+function moins(){
+	if (quantite > 0) {
+
+		quantite -=  1
+		var quantiteInput = document.getElementById("quantity");
+		quantiteInput.innerHTML = quantite ;
+	}
 }

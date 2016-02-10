@@ -82,3 +82,10 @@ h2 {
 .contact {
     background-color: lightgrey;
 }
+.fleche{
+    position: fixed;
+    right: 3px;
+    bottom: 10px;
+    font-size: 3em;
+    color: #d3d3d3;
+}
