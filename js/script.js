@@ -76,19 +76,13 @@ function displayArticle() {
 		createPrix.textContent = liste[i].prix + "€";
 		createLien.appendChild(createPrix);
 
-		for (var y = 0; y <= 5; i++) {
-			var createPi = document.createElement("p");
-			createLien.appendChild(createPi);
-		}
+		// for (var y = 0; y <= 5; i++) {
+		// 	var createPi = document.createElement("p");
+		// 	createLien.appendChild(createPi);
+		// }
 	}
 }
 // <i class="fa fa-star-o"></i>
-
-function plus(){
-	// var quantite = document.getElementById("quantity").innerHTML;
-	document.getElementById("quantity").value ++;
-
-	var quantite = 0;
 
 function plus(){
 	quantite +=  1
