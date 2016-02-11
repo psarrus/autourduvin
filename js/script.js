@@ -83,7 +83,7 @@ function displayArticle() {
 	}
 }
 // <i class="fa fa-star-o"></i>
-
+var quantite = 0;
 function plus(){
 	quantite +=  1
 	var quantiteInput = document.getElementById("quantity");
