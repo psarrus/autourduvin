@@ -96,3 +96,28 @@ h2{
 .fond{
   background-color: #F2F1F0;
 }
+.fleche{
+    position: fixed;
+    right: 3px;
+    bottom: 10px;
+    font-size: 3em;
+    color: #d3d3d3;
+}
+.fleche:hover{
+  color: #630E2D;
+}
+.fleche a: {
+  color: #d3d3d3 !important;
+}
+footer{
+  text-align: center;
+  padding: 2em;
+  font-weight: bold;
+}
+footer a{
+  text-decoration: none;
+  color: #333;
+}
+footer li{
+  list-style: none;
+}
