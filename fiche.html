@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/fiche.css">
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <script src="js/param.js"></script>
     <script src="js/bdd_vin.js"></script>
     <script src="js/panier.js"></script>
@@ -38,14 +39,14 @@
         <div class="row">
           <div class="col-md-10">
             <h3>Description</h3>
-            <p><span class="gras uppercase">sol: </span><span id="sol"></span></p>
-            <p><span class="gras uppercase">cépages: </span><span id="cepages"></span></p>
-            <p><span class="gras uppercase">degré: </span><span id="degre"></span></p>
-            <p><span class="gras uppercase">vignification: </span><span id="vignification"></span></p>
-            <p><span class="gras uppercase">dégustation: </span><span id="degustation"></span></p>
-            <p><span class="gras uppercase">potentiel de garde: </span><span id="potentieldegarde"></span></p>
+            <p><span class="gras uppercase">sol: </span><span id="sol" class="font2"></span></p>
+            <p><span class="gras uppercase">cépages: </span><span id="cepages" class="font2"></span></p>
+            <p><span class="gras uppercase">degré: </span><span id="degre" class="font2"></span></p>
+            <p><span class="gras uppercase">vignification: </span><span id="vignification" class="font2"></span></p>
+            <p><span class="gras uppercase">dégustation: </span><span id="degustation" class="font2"></span></p>
+            <p><span class="gras uppercase">potentiel de garde: </span><span id="potentieldegarde" class="font2"></span></p>
             <p><span class="gras uppercase">température de servie: </span><span id="temperatureduservice"></span></p>
-            <p><span class="gras uppercase">accords culinaires: </span><span id="accordsculinaires"></span></p>
+            <p><span class="gras uppercase">accords culinaires: </span><span id="accordsculinaires" class="font2"></span></p>
           </div>
           <div class="col-md-2 right bouteille">
             <img id="img"  src="" alt="" />
@@ -67,7 +68,9 @@
             </div>
 
             <div class="col-md-4 panier">
-              <a onclick="ajoutPanier()" href="panier.html" class="ajout"><i class="fa fa-shopping-basket"></i>Ajouter</a>
+              <a onclick="ajoutPanier()" href="#" class="ajout">
+                  <i class="fa fa-shopping-basket"></i>Ajouter
+              </a>
             </div>
           </div>
 

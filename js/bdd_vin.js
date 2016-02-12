@@ -129,7 +129,7 @@ var fiche9 ={
   cepages : "45% Cinsault – 30% Syrah – 25% Grenache",
   degre:"13%vol.",
   vignification : "Raisin issu d’une exploitation qualifiée au titre de l’agriculture raisonnée. Récolte manuelle. Pressurage direct et thermorégulation.",
-  degustation : "olie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
+  degustation : "Jolie couleur aux nuances de litchi.Nez assez original, bien parfumé avec des notes de framboise associées à une légère touche vanillée.Bouche structurée, pleine et ronde.",
   potentieldegarde:"",
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
