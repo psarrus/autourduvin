@@ -1,6 +1,10 @@
 /*div{
   border: 1px solid grey;
 }*/
+.font2{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.3em;
+}
 .arianne{
   color: grey;
 }
