@@ -53,3 +53,20 @@ h3 {
 .img {
     margin-bottom: 50px;
 }
+
+.boutton-achat {
+    background-color: #630E2D;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: white;
+}
+
+.boutton-achat:hover {
+    text-decoration: none;
+    color: white    ;
+}
+
+.centrage-tableau {
+    margin: auto;
+    margin-bottom: 2em;
+}

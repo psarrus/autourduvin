@@ -168,3 +168,20 @@ footer li{
 /*.float{
   float: right;
 }*/
+
+.liste-footer {
+  list-style: none;
+}
+
+.liste-footer a {
+  color: #333;
+}
+
+.liste-footer a:hover {
+  text-decoration: none;
+  color: #23527c;
+}
+
+.lien-footer:hover {
+  text-decoration: none;
+}
