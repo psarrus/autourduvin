@@ -102,7 +102,7 @@ function moins(){
 var ligneCommande = [];
 
 function ajoutPanier() {
-    ligneCommande = JSON.parse(sessionStorage.panier);
+    // ligneCommande = JSON.parse(sessionStorage.panier);
 
     var vardesignation = document.getElementById("titre").innerHTML; //recup du produit
     var varprix = document.getElementById("prix").innerHTML; //recup prix du produit
