@@ -71,8 +71,9 @@ var fiche5 ={
   accordsculinaires:"Viandes grillées ou rôties. Gibier.Fromages doux.",
   prix:19,
   img: "photovin/rouge/vin5.png",
-  lien : "fiche.html?paramIndice=4"
+  lien : "fiche.html?paramIndice=4",
 }
+
 var fiche6 ={
   titre : "Thomas & Mathieu",
   millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013",
@@ -85,9 +86,10 @@ var fiche6 ={
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
   prix:17,
-  img: "photovin/rosé/vin1.png"
-,
-lien : "fiche.html?paramIndice=5"}
+  img: "photovin/rosé/vin1.png",
+  lien : "fiche.html?paramIndice=5",
+}
+
 var fiche7 ={
   titre : "Pietrus",
   millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013",
@@ -100,9 +102,10 @@ var fiche7 ={
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
   prix:12,
-  img: "photovin/rosé/vin2.png"
-,
-lien : "fiche.html?paramIndice=6"}
+  img: "photovin/rosé/vin2.png",
+  lien : "fiche.html?paramIndice=6",
+}
+
 var fiche8 ={
   titre : "Le Veyron",
   millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013",
@@ -115,9 +118,9 @@ var fiche8 ={
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
   prix:14,
-  img: "photovin/rosé/vin3.png"
-,
-lien : "fiche.html?paramIndice=7"}
+  img: "photovin/rosé/vin3.png",
+  lien : "fiche.html?paramIndice=7",
+}
 
 var fiche9 ={
   titre : "Château du raisin sec",
@@ -131,9 +134,10 @@ var fiche9 ={
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
   prix:16,
-  img: "photovin/rosé/vin4.png"
-,
-lien : "fiche.html?paramIndice=8"}
+  img: "photovin/rosé/vin4.png",
+  lien : "fiche.html?paramIndice=8"
+}
+
 var fiche10={
   titre : "Laetitia & Nadège",
   millesime:"AOC CORBIÈRES Rosé élevé en fût de chêne Millésime 2013",
@@ -146,12 +150,13 @@ var fiche10={
   temperatureduservice: "8 à 10°C.",
   accordsculinaires:"Vin rosé de repas. Grillades,poissons en sauce, viandes blanches.",
   prix:17,
-  img: "photovin/rosé/vin5.png"
-,
-lien : "fiche.html?paramIndice=9"}
-var fiche11 ={
+  img: "photovin/rosé/vin5.png",
+  lien : "fiche.html?paramIndice=9",
+}
+
+var fiche11 = {
   titre : "Le demon de l'Evêque",
-  millésime : "AOC CORBIÈRES Blanc Millésime 2014",
+  millesime : "AOC CORBIÈRES Blanc Millésime 2014",
   sol:"Argilo-calcaire",
   cepages : "70 % Bourboulenc - 30 % Grenache",
   degre:"12%vol.",
@@ -162,11 +167,12 @@ var fiche11 ={
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
   prix:12,
   img: "photovin/blanc/vin1.png",
-  lien : "fiche.html?paramIndice=10"
+  lien : "fiche.html?paramIndice=10",
 }
-var fiche12 ={
+
+var fiche12 = {
   titre : "Lucie & Anne",
-  millésime : "AOC CORBIÈRES Blanc Millésime 2014",
+  millesime : "AOC CORBIÈRES Blanc Millésime 2014",
   sol:"Argilo-calcaire",
   cepages : "70 % Bourboulenc - 30 % Grenache",
   degre:"12%vol.",
@@ -177,12 +183,12 @@ var fiche12 ={
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
   prix:11,
   img: "photovin/blanc/vin2.png",
-  lien : "fiche.html?paramIndice=11"
+  lien : "fiche.html?paramIndice=11",
 }
 
-var fiche13 ={
+var fiche13 = {
   titre : "Le Jonis",
-  millésime : "AOC CORBIÈRES Blanc Millésime 2014",
+  millesime : "AOC CORBIÈRES Blanc Millésime 2014",
   sol:"Argilo-calcaire",
   cepages : "70 % Bourboulenc - 30 % Grenache",
   degre:"12%vol.",
@@ -193,11 +199,12 @@ var fiche13 ={
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
   prix:12,
   img: "photovin/blanc/vin3.png",
-  lien : "fiche.html?paramIndice=12"
+  lien : "fiche.html?paramIndice=12",
 }
-var fiche14 ={
+
+var fiche14 = {
   titre : "Le Soulier",
-  millésime : "AOC CORBIÈRES Blanc Millésime 2014",
+  millesime : "AOC CORBIÈRES Blanc Millésime 2014",
   sol:"Argilo-calcaire",
   cepages : "70 % Bourboulenc - 30 % Grenache",
   degre:"12%vol.",
@@ -208,21 +215,23 @@ var fiche14 ={
   accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
   prix:16,
   img: "photovin/blanc/vin2.png",
-  lien : "fiche.html?paramIndice=13"
+  lien : "fiche.html?paramIndice=13",
 }
-var fiche15 ={
+
+var fiche15 = {
   titre : "La Machine",
-  millésime : "AOC CORBIÈRES Blanc Millésime 2014",
-  sol:"Argilo-calcaire",
+  millesime : "AOC CORBIÈRES Blanc Millésime 2014",
+  sol : "Argilo-calcaire",
   cepages : "70 % Bourboulenc - 30 % Grenache",
-  degre:"12%vol.",
+  degre : "12%vol.",
   vignification : "",
   degustation : "Jolie couleur fraiche et de nuance or pâle. Bonne puissance aromatique avec des notes de fleurs blanches et de pêche. Bouche ronde et savoureuse avec une jolie persistance des arômes.",
-  potentieldegarde:"",
-  temperatureduservice: "6° - 8°C.",
-  accordsculinaires:"Apéritif, poissons grillés, fruits de mer.",
-  prix:13,
-  img: "photovin/blanc/vin1.png",
-  lien : "fiche.html?paramIndice=14"
+  potentieldegarde : "",
+  temperatureduservice : "6° - 8°C.",
+  accordsculinaires : "Apéritif, poissons grillés, fruits de mer.",
+  prix : 13,
+  img : "photovin/blanc/vin1.png",
+  lien : "fiche.html?paramIndice=14",
 }
-var liste = [fiche1,fiche2,fiche3,fiche4,fiche5,fiche6,fiche7,fiche8,fiche9,fiche10,fiche11,fiche12,fiche13,fiche14,fiche15]
+
+var liste = [fiche1, fiche2, fiche3, fiche4,fiche5, fiche6, fiche7, fiche8, fiche9, fiche10, fiche11, fiche12, fiche13, fiche14, fiche15];

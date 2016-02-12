@@ -49,10 +49,12 @@ function displayArticle() {
 	var affectDiv = document.getElementById('balise-catalogue');
 
 	var createUl = document.createElement("ul");
+	createUl.className = "liste-article"
 	affectDiv.appendChild(createUl);
 
 	for (var i = 0; i < liste.length; i++) {
 		var createLi = document.createElement("li");
+		createLi.className = "border-article reglage-survol";
 		createUl.appendChild(createLi);
 
 		var createLien = document.createElement("a");
@@ -62,6 +64,7 @@ function displayArticle() {
 
 		var createImg = document.createElement("img");
 		createImg.src = liste[i].img;
+		createImg.className = "redim-image";
 		createLien.appendChild(createImg);
 
 		var createTitre = document.createElement("h4");
@@ -76,13 +79,17 @@ function displayArticle() {
 		createPrix.textContent = liste[i].prix + "€";
 		createLien.appendChild(createPrix);
 
-		// for (var y = 0; y <= 5; i++) {
-		// 	var createPi = document.createElement("p");
-		// 	createLien.appendChild(createPi);
-		// }
+		var createAvis = document.createElement("p");
+		createLien.appendChild(createAvis);
+
+		for (var y = 0; y < 5; y++) {
+			var createI = document.createElement("i");
+			createI.className = "fa fa-star-o";
+			createAvis.appendChild(createI);
+		}
 	}
 }
-// <i class="fa fa-star-o"></i>
+
 var quantite = 0;
 function plus(){
 	quantite +=  1
