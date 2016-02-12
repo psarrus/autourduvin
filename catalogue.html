@@ -12,62 +12,89 @@
   <link rel="stylesheet" href="css/style-catalogue.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <script src="js/param.js"></script>
   <script src="js/bdd_vin.js"></script>
   <script src="js/script.js"></script>
-    </head>
-    <body onload="displayArticle()">
-      <div class="container">
-        <div class="row">
-          <nav class="navbar navbar-default">
-            <div class="container-fluid">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <!-- <a class="navbar-brand" href="#">Brand</a> -->
-                <img class="logo" src="images/logo.png" alt="" />
-              </div>
+</head>
+<body onload="displayArticle()">
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <img class="logo" src="images/logo.png" alt="" />
+            <span class="domaine">Le Domaine de Còdi</span>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="hover" href="index.html">Accueil</a></li>
+              <li><a class="hover" href="catalogue.html">Catalogue</a></li>
+              <li><a class="hover" href="panier.html">Panier <i class="fa fa-shopping-basket"></i></a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+            <!-- <div class="float">
 
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="index.html">Accueil</a></li>
-                  <li><a href="catalogue.html">Catalogue</a></li>
-                  <li><a href="panier.html">Panier <i class="fa fa-shopping-basket"></i></a></li>
-                </ul>
-              </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-          </nav>
-        </div>
-        <div class="row">
-          <div class="col-md-12 no-margin">
-            <img src="images/banniere.jpg" width="100%" height="300">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="border-filtre text-left text-uppercase">
-            <div class="espacement-filtre"></div>
-              <p class="text-center"><strong>Trier par</strong></p>
-              <ul id="nav-filtre">
-                <li><input type="checkbox" value="">&nbsp<small>Prix croissant</small></li>
-                <li><input type="checkbox" value="">&nbsp<small>Prix décroissant</small></li>
-                <li><input type="checkbox" value="">&nbsp<small>Les + populaire</small></li>
-                <li><input type="checkbox" value="">&nbsp<small>Les promos</small></li>
-                <li><input type="checkbox" value="">&nbsp<small>Fin de stock</small></li>
-              </ul>
-              <img class="img-responsive border-filtre" src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
-              <img class="img-responsive border-filtre" src="http://www.vigne-rouge-bio.com/wp-content/uploads/2012/06/vigne-rouge-bio-circulation-antioxydant-naturel-feuille-phytotherapie-jambes-lourdes-veines-sang-proprietes-4.jpg" width="100%" height="100%">
-            </div>
-          </div>
-          <div id="balise-catalogue" class="col-md-9"></div>
-        </div>
-          <footer>© Copyright 2016 P.Sarrus T.Martin D.Klementik</footer>
+              <a href="#"><i class="fa fa-facebook-square reseaux-sociaux"></i></a>
+              <a href="#"><i class="fa fa-twitter-square reseaux-sociaux"></i></a>
+            </div> -->
+
+          </div><!-- /.container-fluid -->
+        </nav>
       </div>
-    </body>
-    </html>
+      <div class="row">
+        <div class="col-md-12 no-margin">
+          <img src="images/banniere.jpg" width="100%" height="300">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="border-filtre text-left text-uppercase">
+            <div class="espacement-filtre"></div>
+            <p class="text-center"><strong>Trier par</strong></p>
+            <ul id="nav-filtre">
+              <li><input type="checkbox" value="">&nbsp<small>Prix croissant</small></li>
+              <li><input type="checkbox" value="">&nbsp<small>Prix décroissant</small></li>
+              <li><input type="checkbox" value="">&nbsp<small>Les + populaire</small></li>
+              <li><input type="checkbox" value="">&nbsp<small>Les promos</small></li>
+              <li><input type="checkbox" value="">&nbsp<small>Fin de stock</small></li>
+            </ul>
+            <img class="img-responsive border-filtre" src="http://p0.pic.akm.vodst.com/19256/19256.comment-bien-choisir-une-bouteille-de-vin-les-conseils.w_1280.h_720.m_zoom.c_middle.ts_1353928285..jpg" width="100%" height="100%">
+            <img class="img-responsive border-filtre" src="http://www.vigne-rouge-bio.com/wp-content/uploads/2012/06/vigne-rouge-bio-circulation-antioxydant-naturel-feuille-phytotherapie-jambes-lourdes-veines-sang-proprietes-4.jpg" width="100%" height="100%">
+          </div>
+        </div>
+        <div id="balise-catalogue" class="col-md-9"></div>
+      </div>
+      <footer>
+        <div class="col-md-12">
+          <span>© Copyright 2016 P.Sarrus T.Martin D.Klementik</span>
+        </div>
+        <div class="col-md-6">
+          <span>Suivez nous</span>
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook-square"></i>
+            </a></li>
+            <li><a href="#"><i class="fa fa-twitter-square"></i>
+            </a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li><a href="http://127.0.0.1:8000/index.html">Accueil</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="http://127.0.0.1:8000/panier.html">Panier</a></li>
+            <li><a href="http://127.0.0.1:8000/catalogue.html">Catalogue</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+  </html>
