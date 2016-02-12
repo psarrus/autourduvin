@@ -12,6 +12,8 @@
     <script src="bdd_vins.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="container">
@@ -26,6 +28,7 @@
               <span class="icon-bar"></span>
             </button>
             <img class="logo" src="images/logo.png" alt="" />
+            <span class="domaine">Le Domaine de Còdi</span>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -52,8 +55,8 @@
 
       <div class="row">
         <div class="col-md-12 presentation">
-          <h2>La Philosophie De Notre Domaine</h2>
-          <p>
+          <h2 class="font">La Philosophie De Notre Domaine</h2>
+          <p class="font2">
               Les vins de Damien, Théo et Pierre sont à l’image de leurs auteurs,
               amicaux,attachants, populaires. Le travail au Domaine est une quête de
             perfection à laquelle ils s’attèlent avec ténacité depuis quelques ssemaines.
@@ -73,27 +76,27 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row padding">
         <div class="col-md-12">
-          <h2>Nos Meilleures ventes</h2>
+          <h2 class="font bottom">Nos Meilleures ventes</h2>
           <div class="row no-margin">
               <div class="col-md-4 pdt">
                   <div class="row pdtphare">
                       <div class="col-md-4 pdt">
-                          <a href="http://127.0.0.1:8000/fiche.html?paramIndice=0"><img class="img-bouteille" src="photovin/rouge/vin1.png" alt="" /></a>
+                          <a class="deco_ventes" href="http://127.0.0.1:8000/fiche.html?paramIndice=0"><img class="img-bouteille" src="photovin/rouge/vin1.png" alt="" />
                       </div>
                       <div class="col-md-8 pdt">
-                          <h3>AOC CORBIÈRES Rouge Millésime 2010</h3>
+                        <h3 class="font2 bold">AOC CORBIÈRES Rouge Millésime 2010</h3></a>
                       </div>
                   </div>
               </div>
               <div class="col-md-4 pdt">
                   <div class="row pdtphare">
                       <div class="col-md-4 pdt">
-                          <a href="http://127.0.0.1:8000/fiche.html?paramIndice=5"><img class="img-bouteille" src="photovin/rosé/vin1.png" alt="" /></a>
+                          <a class="deco_ventes" href="http://127.0.0.1:8000/fiche.html?paramIndice=5"><img class="img-bouteille" src="photovin/rosé/vin1.png" alt="" />
                       </div>
                       <div class="col-md-8 pdt">
-                          <h3>AOC CORBIÈRES Rouge Millésime 2010</h3>
+                          <h3 class="font2 bold">AOC CORBIÈRES Rouge Millésime 2010</h3></a>
                       </div>
                   </div>
 
@@ -101,10 +104,10 @@
               <div class="col-md-4 pdt">
                   <div class="row pdtphare">
                       <div class="col-md-4 pdt">
-                          <a href="http://127.0.0.1:8000/fiche.html?paramIndice=12"><img class="img-bouteille" src="photovin/blanc/vin3.png" alt="" /></a>
+                          <a class="deco_ventes" href="http://127.0.0.1:8000/fiche.html?paramIndice=12"><img class="img-bouteille" src="photovin/blanc/vin3.png" alt="" />
                       </div>
                       <div class="col-md-8 pdt">
-                          <h3>AOC CORBIÈRES Rouge Millésime 2010</h3>
+                          <h3 class="font2 bold">AOC CORBIÈRES Rouge Millésime 2010</h3></a>
                       </div>
                   </div>
 
@@ -120,16 +123,16 @@
           </div>
 
           <div class="col-md-6 max-width">
-          <h2>Nous contacter</h2>
+          <h2 class="font">Nous contacter</h2>
              <form class="" method="">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Votre Nom">
+                    <span class="red">*</span><input type="text" class="form-control" id="exampleInputName2" placeholder="Votre Nom">
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Votre E-mail">
+                    <span class="red">*</span><input type="email" class="form-control" id="exampleInputEmail2" placeholder="Votre E-mail">
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" rows="3" placeholder="Votre Message"></textarea>
+                    <span class="red">*</span><textarea class="form-control" rows="3" placeholder="Votre Message"></textarea>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn-envoyer">Envoyer</button>
@@ -137,12 +140,11 @@
             </form>
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row"> -->
         <div class="col-md-12">
           <a class="fleche" href="#"><i class="fa fa-arrow-circle-up"></i></a>
         </div>
       </div>
-    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
