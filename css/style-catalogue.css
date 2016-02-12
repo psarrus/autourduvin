@@ -1,8 +1,8 @@
 .note {
-   float: right;
    color: #aaa;
    text-decoration: none;
    transition: color .4s;
+   font-size: 1em;
 }
 .note:hover,
 .note:focus,
