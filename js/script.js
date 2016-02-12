@@ -215,3 +215,27 @@ function afficherTotal() {
 			vide4.className = "td5";
 		}
 	}
+
+function generatorNotice() {
+	for (var i = 0; i < listeAvis.length; i++) {
+		var divBase = document.getElementById('gener-avis');
+
+		var divUnique = document.createElement("div");
+		divBase.appendChild(divUnique);
+		divUnique.className = "style-divunique";
+
+		var elementH4 = document.createElement("h4");
+		divUnique.appendChild(elementH4);
+		elementH4.textContent = listeAvis[i].nom;
+
+		for (var y = 0; y < 5; y++) {
+			var createI = document.createElement("i");
+			createI.className = "fa fa-star-o";
+			divUnique.appendChild(createI);
+		}
+
+		var elementP = document.createElement("p");
+		divUnique.appendChild(elementP);
+		elementP.textContent = listeAvis[i].avis;
+	}
+}
