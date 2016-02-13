@@ -111,8 +111,7 @@ var panier = [];
 function ajoutPanier() {
 	if (sessionStorage.panier != undefined) {
 		panier = JSON.parse(sessionStorage.panier);
-
-	}
+		}
 
     var vardesignation = document.getElementById("titre").innerHTML; //recup du produit
     var varprix = document.getElementById("prix").innerHTML; //recup prix du produit
@@ -133,7 +132,7 @@ function afficherPanier() {
 
     panier = JSON.parse(sessionStorage.panier);
 
-    var totalPanier="";
+    var totalPanier = 0;
 
     var tablePanier = document.getElementById("idPanier"); //recup de l'element qui correspond au tableau dans pnier.html
 
@@ -149,10 +148,36 @@ function afficherPanier() {
             newLigne.appendChild(produit); //affecte le td dans le tr
             produit.className = "td1";
 
-            var quantite = document.createElement("td"); //creation d'une colonne vide
-            quantite.innerHTML = panier[i].qte;
-            newLigne.appendChild(quantite);
-            quantite.className = "td2";
+			// <div class="button">
+			//   <button  onclick="moins()" class="moins" type="button" name="button">-</button>
+			//   <button id="quantity" class="nbr" type="text" name="button">0</button>
+			//   <button onclick="plus()" class="plus" type="button" name="button">+</button>
+			// </div>
+
+			var divQte = document.createElement("div");
+			newLigne.appendChild(divQte);
+
+			var btnMoins = document.createElement("button");
+			divQte.appendChild(btnMoins);
+			btnMoins.className = "btnQte";
+			btnMoins.addEventListener('click',moins());
+
+			var quantite = document.createElement("span"); //creation d'une colonne vide
+			quantite.innerHTML = panier[i].qte;
+			divQte.appendChild(quantite);
+			quantite.className = "td2";
+
+			var btnPlus = document.createElement("button");
+			divQte.appendChild(btnPlus);
+			btnPlus.className = "btnQte";
+			btnMoins.onclick = "plus()";
+
+
+
+
+
+
+
 
             var prix = document.createElement("td"); //creation d'une colonne vide
             prix.innerHTML = panier[i].prix + " €";
@@ -163,55 +188,74 @@ function afficherPanier() {
             totalLigne.innerHTML = (parseInt(panier[i].qte) * parseFloat(panier[i].prix)) + " €";
             newLigne.appendChild(totalLigne);
             totalLigne.className = "td4";
+			var vartotalligne = parseFloat(totalLigne.innerHTML);
+			console.log(vartotalligne);
+			totalPanier = totalPanier + vartotalligne;
 
             var casePoubelle = document.createElement("td");
-            // casePoubelle.innerHTML = '<a id="sup" href="#"><i class="fa fa-trash"></i></a>';
             newLigne.appendChild(casePoubelle);
             casePoubelle.className = "td5";
 			var poubelle = document.createElement("a");
 			poubelle.id = 'sup_'+i;
 			poubelle.href = '#';
+			poubelle.title = "Supprimer";
 			casePoubelle.appendChild(poubelle);
-			poubelle.innerHTML = '[x]';
+			poubelle.innerHTML = 'X';
 			poubelle.addEventListener('click', function (evt){
 				var idLigneSuppr = evt.target.id.replace("sup_", "");
+				console.log(idLigneSuppr);
 				panier.splice(idLigneSuppr, 1);
-				document.getElementById("tr"+idLigneSuppr).remove();
 				sessionStorage.setItem("panier",JSON.stringify(panier));
+				// document.getElementById("idTotal").remove();
+				window.location.reload();
+				});
+			}
 
-			});
+				afficherTotal(totalPanier);
 
-            var vartotalligne = parseFloat(totalLigne.innerHTML);
-            totalPanier = totalPanier + vartotalligne;
-        }
-	}
+}
 
-function afficherTotal() {
 
-		if (totalPnier !="") {
+function afficherTotal(totalPanier) {
 
-			var newLigneTotal = document.createElement("tr"); //creation d'une ligne vide
-			tablePanier.appendChild(newLigneTotal); //affectation du tr dans table
+		if (totalPanier > 0) {
 
-			var vide1 = document.createElement("td"); //creation d'une cellule vide
-			vide1.innerHTML ="";
-			newLigneTotal.appendChild(vide1); //affectation du td dans table
-			vide1.className = "td1";
-			var vide2 = document.createElement("td"); //creation d'une ligne vide
-			vide2.innerHTML ="";
-			newLigneTotal.appendChild(vide2); //affectation du td dans table
-			vide2.className = "td2";
-			var vide3 = document.createElement("td"); //creation d'une ligne vide
-			vide3.innerHTML ="A Payer";
-			newLigneTotal.appendChild(vide3); //affectation du td dans table
-			vide3.className = "td2";
-			var totalCde = document.createElement("td"); //creation d'une ligne vide
-			totalCde.innerHTML=totalPanier + " €";
-			newLigneTotal.appendChild(totalCde); //affectation du td dans table
-			totalCde.className = "td4";
-			var vide4 = document.createElement("td"); //creation d'une cellule vide
-			vide1.innerHTML ="";
-			newLigneTotal.appendChild(vide4); //affectation du td dans table
-			vide4.className = "td5";
+		var titre = document.getElementById("idTitre");
+		var titreH3 = document.createElement("h3");
+		titreH3.innerHTML = "Votre panier";
+		titre.appendChild(titreH3);
+
+		var tablePanier = document.getElementById("idPanier");
+		var newLigneTotal = document.createElement("tr");
+		newLigneTotal.id = "idTotal"; //creation d'une ligne vide
+		tablePanier.appendChild(newLigneTotal); //affectation du tr dans table
+
+		var vide1 = document.createElement("td"); //creation d'une cellule vide
+		vide1.innerHTML ="";
+		newLigneTotal.appendChild(vide1); //affectation du td dans table
+		vide1.className = "td1";
+		var vide2 = document.createElement("td"); //creation d'une ligne vide
+		vide2.innerHTML ="";
+		newLigneTotal.appendChild(vide2); //affectation du td dans table
+		vide2.className = "td2";
+		var vide3 = document.createElement("td"); //creation d'une ligne vide
+		vide3.innerHTML ="A Payer";
+		newLigneTotal.appendChild(vide3); //affectation du td dans table
+		vide3.className = "td2";
+		var totalCde = document.createElement("td"); //creation d'une ligne vide
+		totalCde.innerHTML=totalPanier + " €";
+		newLigneTotal.appendChild(totalCde); //affectation du td dans table
+		totalCde.className = "td4";
+		var vide4 = document.createElement("td"); //creation d'une cellule vide
+		vide1.innerHTML ="";
+		newLigneTotal.appendChild(vide4); //affectation du td dans table
+		vide4.className = "td5";
 		}
-	}
+		else
+		{
+		var titre = document.getElementById("idTitre");
+		var titreH3 = document.createElement("h3");
+		titreH3.innerHTML = "Votre panier est vide";
+		titre.appendChild(titreH3);
+		}
+}
