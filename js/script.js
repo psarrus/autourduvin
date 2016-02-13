@@ -251,11 +251,37 @@ function afficherTotal(totalPanier) {
 		newLigneTotal.appendChild(vide4); //affectation du td dans table
 		vide4.className = "td5";
 		}
-		else
-		{
-		var titre = document.getElementById("idTitre");
-		var titreH3 = document.createElement("h3");
-		titreH3.innerHTML = "Votre panier est vide";
-		titre.appendChild(titreH3);
+	}
+
+function generatorNotice() {
+	for (var i = 0; i < listeAvis.length; i++) {
+		var divBase = document.getElementById('gener-avis');
+
+		var divUnique = document.createElement("div");
+		divBase.appendChild(divUnique);
+		divUnique.className = "style-divunique";
+
+		var elementH4 = document.createElement("h4");
+		divUnique.appendChild(elementH4);
+		elementH4.textContent = listeAvis[i].nom;
+
+		for (var y = 0; y < 5; y++) {
+			var createI = document.createElement("i");
+			createI.className = "fa fa-star-o";
+			divUnique.appendChild(createI);
 		}
+
+		var elementP = document.createElement("p");
+		divUnique.appendChild(elementP);
+		elementP.textContent = listeAvis[i].avis;
+	}
 }
+
+// 		else
+// 		{
+// 		var titre = document.getElementById("idTitre");
+// 		var titreH3 = document.createElement("h3");
+// 		titreH3.innerHTML = "Votre panier est vide";
+// 		titre.appendChild(titreH3);
+// 		}
+// }

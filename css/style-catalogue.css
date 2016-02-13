@@ -4,6 +4,16 @@
    transition: color .4s;
    font-size: 1em;
 }
+.arianne{
+  color: grey;
+}
+.no-padding{
+  padding-left: 0;
+  padding-right: 0;
+}
+.breadcrumb{
+  margin: 0;
+}
 .note:hover,
 .note:focus,
 .note:hover ~ a,
@@ -82,4 +92,17 @@ h4 {
 .redim-image{
 	width: 70px;
 	height: 280px;
+}
+.fleche{
+    position: fixed;
+    right: 3px;
+    bottom: 10px;
+    font-size: 3em;
+    color: #d3d3d3;
+}
+.fleche:hover{
+  color: #630E2D;
+}
+.fleche a: {
+  color: #d3d3d3 !important;
 }

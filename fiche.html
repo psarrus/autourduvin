@@ -14,11 +14,12 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <script src="js/param.js"></script>
     <script src="js/bdd_vin.js"></script>
+    <script src="js/db-avis.js"></script>
     <script src="js/panier.js"></script>
     <script src="js/script.js"></script>
 
   </head>
-  <body onload="readParameter()">
+  <body onload="readParameter(),generatorNotice()">
     <!-- <h1>Fiche produit</h1> -->
     <div class="container">
       <div class="row">
@@ -75,44 +76,62 @@
           </div>
 
         </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Avis</h3>
-          <a class="note" href=""><i class="fa fa-star-o"></i></a>
-          <a class="note" href=""><i class="fa fa-star-o"></i></a>
-          <a class="note" href=""><i class="fa fa-star-o"></i></a>
-          <a class="note" href=""><i class="fa fa-star-o"></i></a>
-          <a class="note" href=""><i class="fa fa-star-o"></i></a>
-          <textarea class="form-control" rows="3"></textarea>
+        <!-- start generator notice -->
+        <div class="row">
+          <div class="col-md-12">
+            <div id="gener-avis"></div>
+          </div>
         </div>
-      </div>
+        <!-- end generator notice -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="style-avis">
+              <h4 class="text-center"><em>Votre avis nous interèsse</em></h4>
+              <form class="form-inline text-center">
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputName2">Name</label>
+                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputEmail2">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Votre email">
+                </div><br><br>
+                <a class="note" href=""><i class="fa fa-star-o"></i></a>
+                <a class="note" href=""><i class="fa fa-star-o"></i></a>
+                <a class="note" href=""><i class="fa fa-star-o"></i></a>
+                <a class="note" href=""><i class="fa fa-star-o"></i></a>
+                <a class="note" href=""><i class="fa fa-star-o"></i></a>
+              </form>
+              <br>
+                <textarea class="form-control" rows="3"></textarea>
+                <button type="button" class="btn btn-success btn-lg position-bouton">Envoyez</button>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       <div class="col-md-12">
         <a class="fleche" href="#"><i class="fa fa-arrow-circle-up"></i></a>
       </div>
   </div>
   <footer>
-    <div class="col-md-12">
-      <span>© Copyright 2016 P.Sarrus T.Martin D.Klementik</span>
-    </div>
-    <div class="col-md-6">
-      <span>Suivez nous</span>
-      <ul>
-        <li><a href="#"><i class="fa fa-facebook-square"></i>
-        </a></li>
-        <li><a href="#"><i class="fa fa-twitter-square"></i>
-        </a></li>
-        <li><a href="#">Gallery</a></li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <ul>
-        <li><a href="http://127.0.0.1:8000/index.html">Accueil</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="http://127.0.0.1:8000/panier.html">Panier</a></li>
-        <li><a href="http://127.0.0.1:8000/catalogue.html">Catalogue</a></li>
-      </ul>
-    </div>
-  </footer>
+          <div class="col-md-6">
+            <p>Retrouvez nous sur</p>
+            <a href="#"><img src="images/facebook.png"></a>
+            <a href="#"><img src="images/twitter.png"></a>
+          </div>
+          <div class="col-md-6">
+            <ul class="liste-footer text-uppercase">
+              <li><a href="index.html"><small>Accueil</small></a></li>
+              <li><a href="#"><small>Contact</small></a></li>
+              <li><a href="panier.html"><small>Panier</small></a></li>
+              <li><a href="catalogue.html"><small>Catalogue</small></a></li>
+            </ul>
+          </div>
+          <div class="col-md-12">
+            <p class="text-uppercase"><small>© Copyright 2016 - P.Sarrus T.Martin D.Klementik - <a class="lien-footer" href="index.html">autour du vin - le domaine codi</a></small></p>
+          </div>
+        </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>

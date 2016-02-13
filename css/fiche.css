@@ -109,15 +109,53 @@ h2{
 .fleche a: {
   color: #d3d3d3 !important;
 }
+
 footer{
   text-align: center;
   padding: 2em;
   font-weight: bold;
 }
-footer a{
-  text-decoration: none;
+
+.liste-footer {
+  list-style: none;
+}
+
+.liste-footer a {
   color: #333;
 }
-footer li{
-  list-style: none;
+
+.liste-footer a:hover {
+  text-decoration: none;
+  color: #23527c;
+}
+
+.lien-footer:hover {
+  text-decoration: none;
+}
+
+.style-avis {
+  width: 50%;
+  margin: auto;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.position-bouton {
+  margin: 1em auto;
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.style-divunique {
+  width: 50%;
+  margin: auto;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  padding: 1em;
+  margin-top: 1em;
 }
