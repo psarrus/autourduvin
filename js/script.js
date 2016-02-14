@@ -1,5 +1,4 @@
 function readParameter() {
-	console.log(urlParams);
 	var indiceBouteille = urlParams.paramIndice;
 	var bouteille = liste[indiceBouteille];
 
@@ -57,7 +56,6 @@ function displayArticle() {
 		createUl.appendChild(createLi);
 
 		var createLien = document.createElement("a");
-		console.log(liste[i].lien)
 		createLien.href = liste[i].lien;
 		createLi.appendChild(createLien);
 
@@ -89,7 +87,7 @@ function displayArticle() {
 	}
 }
 
-var quantite = 0;
+var quantite = 1;
 function plus(){
 	quantite +=  1
 	var quantiteInput = document.getElementById("quantity");
@@ -124,8 +122,8 @@ function ajoutPanier() {
     }
 
     panier.push(nxPdtPanier);
-	console.log(panier);
     sessionStorage.setItem("panier",JSON.stringify(panier));
+
 }
 
 function afficherPanier() {
@@ -135,7 +133,6 @@ function afficherPanier() {
     var totalPanier = 0;
 
     var tablePanier = document.getElementById("idPanier"); //recup de l'element qui correspond au tableau dans pnier.html
-
         for (var i = 0; i < panier.length; i++) { // pour chaque objet du panier
 
             var newLigne = document.createElement("tr"); //creation d'une ligne vide
@@ -144,40 +141,66 @@ function afficherPanier() {
 			newLigne.id = "tr"+i;
 
             var produit = document.createElement("td"); //creation d'une colonne vide
-            produit.innerHTML = panier[i].designation; //donne la valeur à l'element html
             newLigne.appendChild(produit); //affecte le td dans le tr
             produit.className = "td1";
-
-			// <div class="button">
-			//   <button  onclick="moins()" class="moins" type="button" name="button">-</button>
-			//   <button id="quantity" class="nbr" type="text" name="button">0</button>
-			//   <button onclick="plus()" class="plus" type="button" name="button">+</button>
-			// </div>
+				var lienPdt = document.createElement("a");
+				produit.appendChild(lienPdt);
+				lienPdt.innerHTML = panier[i].designation; //donne la valeur à l'element html
+				lienPdt.id = i;
+				lienPdt.href = "#";
+				// lienPdt.addEventListener('click', function (evt){
+				// 	var idLigne= evt.target.id;
+				// 	console.log(idLigne);
+				// 	readParameter(idLigne);
+					// panier.splice(idLigneSuppr, 1);
+					// sessionStorage.setItem("panier",JSON.stringify(panier));
+					// document.getElementById("idTotal").remove();
+					// window.location.reload();
+					// });
 
 			var divQte = document.createElement("div");
 			newLigne.appendChild(divQte);
 
-			var btnMoins = document.createElement("button");
-			divQte.appendChild(btnMoins);
-			btnMoins.className = "btnQte";
-			btnMoins.addEventListener('click',moins());
+				var btnMoins = document.createElement("button");
+				divQte.appendChild(btnMoins);
+				btnMoins.id = "idLigne" + i;
+				btnMoins.innerHTML = "-";
+				btnMoins.className = "btnQte";
 
-			var quantite = document.createElement("span"); //creation d'une colonne vide
-			quantite.innerHTML = panier[i].qte;
-			divQte.appendChild(quantite);
-			quantite.className = "td2";
+				var eltQte = document.createElement("span");
+				eltQte.innerHTML = panier[i].qte;
+				qteCde = parseInt(eltQte.innerHTML);
+				divQte.appendChild(eltQte);
+				eltQte.className = "td2";
 
-			var btnPlus = document.createElement("button");
-			divQte.appendChild(btnPlus);
-			btnPlus.className = "btnQte";
-			btnMoins.onclick = "plus()";
+				var btnPlus = document.createElement("button");
+				divQte.appendChild(btnPlus);
+				btnPlus.id = "idLigne" + i;
+				btnPlus.innerHTML = "+";
+				btnPlus.className = "btnQte";
 
+				btnMoins.addEventListener('click',function (evt) {
+					var idModif = evt.target.id.replace("idLigne","");
+					qteCde = panier[idModif].qte;
+					console.log(qteCde);
+					if (qteCde > 1) {
+						qteCde -=  1;
+						panier[idModif].qte = qteCde;
+						panier.splice(idModif, 1,(panier[idModif]));
+						sessionStorage.setItem("panier",JSON.stringify(panier));
+						window.location.reload();
+					}
+				});
 
-
-
-
-
-
+				btnPlus.addEventListener('click',function(evt) {
+					var idModif = evt.target.id.replace("idLigne","");
+					qteCde = parseInt(panier[idModif].qte);
+					qteCde +=  1;
+					panier[idModif].qte = qteCde;
+					panier.splice(idModif, 1,(panier[idModif]));
+					sessionStorage.setItem("panier",JSON.stringify(panier));
+					window.location.reload();
+					});
 
             var prix = document.createElement("td"); //creation d'une colonne vide
             prix.innerHTML = panier[i].prix + " €";
@@ -210,15 +233,17 @@ function afficherPanier() {
 				window.location.reload();
 				});
 			}
-
 				afficherTotal(totalPanier);
-
 }
 
 
 function afficherTotal(totalPanier) {
 
+		var finaliser = document.getElementById('btn-finaliser');
+
 		if (totalPanier > 0) {
+
+		finaliser.className ="boutton-achat affiche";
 
 		var titre = document.getElementById("idTitre");
 		var titreH3 = document.createElement("h3");
@@ -251,6 +276,15 @@ function afficherTotal(totalPanier) {
 		newLigneTotal.appendChild(vide4); //affectation du td dans table
 		vide4.className = "td5";
 		}
+		else
+		{
+		finaliser.className = "cache";
+		var titre = document.getElementById("idTitre");
+		var titreH3 = document.createElement("h3");
+		titreH3.innerHTML = "Votre panier est vide";
+		titre.appendChild(titreH3);
+
+		}
 	}
 
 function generatorNotice() {
@@ -276,12 +310,3 @@ function generatorNotice() {
 		elementP.textContent = listeAvis[i].avis;
 	}
 }
-
-// 		else
-// 		{
-// 		var titre = document.getElementById("idTitre");
-// 		var titreH3 = document.createElement("h3");
-// 		titreH3.innerHTML = "Votre panier est vide";
-// 		titre.appendChild(titreH3);
-// 		}
-// }

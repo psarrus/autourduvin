@@ -12,11 +12,16 @@ h3 {
     text-align: center;
     background-color: #630E2D;
     color: white;
+    font-weight: bold;
 }
 .td1 {
     width: 38%;
     padding: 0 20px;
     text-align: left;
+}
+.td1 a {
+    text-decoration: none;
+    color: inherit;
 }
 .td2 {
     width: 20%;
@@ -40,12 +45,13 @@ h3 {
     color: inherit;
     text-decoration: none;
 }
-.bold {
-    font-weight: bold;
-}
 
 .img {
     margin-bottom: 50px;
+}
+
+.btn-panier {
+    margin-top: 2em;
 }
 
 .boutton-achat {
@@ -60,12 +66,20 @@ h3 {
     color: white    ;
 }
 
-.centrage-tableau {
+/*.centrage-tableau {
     margin: auto;
     margin-bottom: 2em;
-}
+}*/
 
 .btnQte {
-    height: 1em;
+    height: 1.5em;
     margin: 0 1em;
+    line-height: 1em;
+}
+
+.cache {
+    display: none;
+}
+.affiche {
+    display: inline;
 }
