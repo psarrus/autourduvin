@@ -95,7 +95,7 @@ function plus(){
 }
 
 function moins(){
-	if (quantite > 0) {
+	if (quantite > 1) {
 
 		quantite -=  1
 		var quantiteInput = document.getElementById("quantity");
@@ -105,6 +105,7 @@ function moins(){
 
 var panier = [];
 // sessionStorage.setItem("panier",JSON.stringify(panier));
+
 
 function ajoutPanier() {
 	if (sessionStorage.panier != undefined) {
@@ -128,6 +129,18 @@ function ajoutPanier() {
 
 function afficherPanier() {
 
+	var titre = document.getElementById("idTitre");
+	var titreH3 = document.createElement("h3");
+	titreH3.className = "cache";
+	titreH3.id = "panier";
+	titreH3.innerHTML = "Votre panier";
+	titre.appendChild(titreH3);
+	var titreH3vide = document.createElement("h3");
+	titreH3vide.className = "affiche";
+	titreH3vide.id = "paniervide";
+	titreH3vide.innerHTML = "Votre panier est vide";
+	titre.appendChild(titreH3vide);
+
     panier = JSON.parse(sessionStorage.panier);
 
     var totalPanier = 0;
@@ -137,7 +150,7 @@ function afficherPanier() {
 
             var newLigne = document.createElement("tr"); //creation d'une ligne vide
             tablePanier.appendChild(newLigne); //affectation du tr dans table
-            newLigne.className = "tr";
+            newLigne.className = "tr data-row";
 			newLigne.id = "tr"+i;
 
             var produit = document.createElement("td"); //creation d'une colonne vide
@@ -163,7 +176,7 @@ function afficherPanier() {
 
 				var btnMoins = document.createElement("button");
 				divQte.appendChild(btnMoins);
-				btnMoins.id = "idLigne" + i;
+				btnMoins.id = "btnMoins" + i;
 				btnMoins.innerHTML = "-";
 				btnMoins.className = "btnQte";
 
@@ -171,49 +184,67 @@ function afficherPanier() {
 				eltQte.innerHTML = panier[i].qte;
 				qteCde = parseInt(eltQte.innerHTML);
 				divQte.appendChild(eltQte);
+				eltQte.id = "qte" + i;
 				eltQte.className = "td2";
 
 				var btnPlus = document.createElement("button");
 				divQte.appendChild(btnPlus);
-				btnPlus.id = "idLigne" + i;
+				btnPlus.id = "btnPlus" + i;
 				btnPlus.innerHTML = "+";
 				btnPlus.className = "btnQte";
 
+				var prix = document.createElement("td"); //creation d'une colonne vide
+				prix.innerHTML = panier[i].prix + " €";
+				newLigne.appendChild(prix);
+				prix.className = "td2";
+				prix.id = "prix" + i;
+
+				var totalLigne = document.createElement("td");
+				newLigne.appendChild(totalLigne);
+				totalLigne.className = "td4";
+				totalLigne.id = "tLigne" + i;
+				var Q = parseInt(document.getElementById("qte"+i).innerHTML);
+				var P = parseInt(document.getElementById("prix"+i).innerHTML);
+				document.getElementById(totalLigne.id).innerHTML = (Q * P);
+				var vartotalligne = parseFloat(totalLigne.innerHTML);
+
 				btnMoins.addEventListener('click',function (evt) {
-					var idModif = evt.target.id.replace("idLigne","");
+					var idModif = evt.target.id.replace("btnMoins","");
 					qteCde = panier[idModif].qte;
-					console.log(qteCde);
 					if (qteCde > 1) {
 						qteCde -=  1;
 						panier[idModif].qte = qteCde;
 						panier.splice(idModif, 1,(panier[idModif]));
 						sessionStorage.setItem("panier",JSON.stringify(panier));
-						window.location.reload();
+						var idQte = evt.target.id.replace("btnMoins","qte");
+						var idPrix = evt.target.id.replace("btnMoins","prix");
+						var idTotalLigne = evt.target.id.replace("btnMoins","tLigne");
+						document.getElementById(idQte).innerHTML = qteCde;
+						var Q = parseInt(document.getElementById(idQte).innerHTML);
+						var P = parseFloat(document.getElementById(idPrix).innerHTML);
+						var vartotalligne = Q * P;
+						document.getElementById(idTotalLigne).innerHTML = vartotalligne;
+						afficherTotal(totalPanier);
 					}
 				});
 
 				btnPlus.addEventListener('click',function(evt) {
-					var idModif = evt.target.id.replace("idLigne","");
+					var idModif = evt.target.id.replace("btnPlus","");
 					qteCde = parseInt(panier[idModif].qte);
 					qteCde +=  1;
 					panier[idModif].qte = qteCde;
 					panier.splice(idModif, 1,(panier[idModif]));
 					sessionStorage.setItem("panier",JSON.stringify(panier));
-					window.location.reload();
-					});
-
-            var prix = document.createElement("td"); //creation d'une colonne vide
-            prix.innerHTML = panier[i].prix + " €";
-            newLigne.appendChild(prix);
-            prix.className = "td2";
-
-            var totalLigne = document.createElement("td");
-            totalLigne.innerHTML = (parseInt(panier[i].qte) * parseFloat(panier[i].prix)) + " €";
-            newLigne.appendChild(totalLigne);
-            totalLigne.className = "td4";
-			var vartotalligne = parseFloat(totalLigne.innerHTML);
-			console.log(vartotalligne);
-			totalPanier = totalPanier + vartotalligne;
+					var idQte = evt.target.id.replace("btnPlus","qte");
+					var idPrix = evt.target.id.replace("btnPlus","prix");
+					var idTotalLigne = evt.target.id.replace("btnPlus","tLigne");
+					document.getElementById(idQte).innerHTML = qteCde;
+					var Q = parseInt(document.getElementById(idQte).innerHTML);
+					var P = parseFloat(document.getElementById(idPrix).innerHTML);
+					var vartotalligne = Q * P;
+					document.getElementById(idTotalLigne).innerHTML = vartotalligne;
+					afficherTotal(totalPanier);
+				});
 
             var casePoubelle = document.createElement("td");
             newLigne.appendChild(casePoubelle);
@@ -226,66 +257,129 @@ function afficherPanier() {
 			poubelle.innerHTML = 'X';
 			poubelle.addEventListener('click', function (evt){
 				var idLigneSuppr = evt.target.id.replace("sup_", "");
-				console.log(idLigneSuppr);
 				panier.splice(idLigneSuppr, 1);
 				sessionStorage.setItem("panier",JSON.stringify(panier));
-				// document.getElementById("idTotal").remove();
-				window.location.reload();
+				document.getElementById("tr"+idLigneSuppr).remove();
+				afficherTotal(totalPanier);
 				});
 			}
-				afficherTotal(totalPanier);
-}
 
+			var newLigneTTC = document.createElement("tr");
+			newLigneTTC.id = "ligneTTC"
+			tablePanier.appendChild(newLigneTTC); //affectation du tr dans table
+
+			var vide1 = document.createElement("td"); //creation d'une cellule vide
+			vide1.innerHTML ="";
+			newLigneTTC.appendChild(vide1); //affectation du td dans table
+			vide1.className = "td1";
+			var vide2 = document.createElement("td"); //creation d'une ligne vide
+			vide2.innerHTML ="";
+			newLigneTTC.appendChild(vide2); //affectation du td dans table
+			vide2.className = "td2";
+			var vide3 = document.createElement("td"); //creation d'une ligne vide
+			vide3.innerHTML ="TTC";
+			newLigneTTC.appendChild(vide3); //affectation du td dans table
+			vide3.className = "td2";
+			var totalCde = document.createElement("td"); //creation d'une ligne vide
+			totalCde.id ="idttc";
+			newLigneTTC.appendChild(totalCde); //affectation du td dans table
+			totalCde.className = "td4";
+			var vide4 = document.createElement("td"); //creation d'une cellule vide
+			vide1.innerHTML ="";
+			newLigneTTC.appendChild(vide4); //affectation du td dans table
+			vide4.className = "td5";
+
+			var newLigneTVA = document.createElement("tr");
+			newLigneTVA.id = "ligneTVA";
+			tablePanier.appendChild(newLigneTVA); //affectation du tr dans table
+
+			var vide1 = document.createElement("td"); //creation d'une cellule vide
+			vide1.innerHTML ="";
+			newLigneTVA.appendChild(vide1); //affectation du td dans table
+			vide1.className = "td1";
+			var vide2 = document.createElement("td"); //creation d'une ligne vide
+			vide2.innerHTML ="";
+			newLigneTVA.appendChild(vide2); //affectation du td dans table
+			vide2.className = "td2";
+			var vide3 = document.createElement("td"); //creation d'une ligne vide
+			vide3.innerHTML ="TVA";
+			newLigneTVA.appendChild(vide3); //affectation du td dans table
+			vide3.className = "td2";
+			var totalTVA = document.createElement("td"); //creation d'une ligne vide
+			totalTVA.id ="idtva";
+			newLigneTVA.appendChild(totalTVA); //affectation du td dans table
+			totalTVA.className = "td4";
+			var vide4 = document.createElement("td"); //creation d'une cellule vide
+			vide1.innerHTML ="";
+			newLigneTVA.appendChild(vide4); //affectation du td dans table
+			vide4.className = "td5";
+
+			var newLigneHT = document.createElement("tr");
+			newLigneHT.id = "ligneHT"
+			tablePanier.appendChild(newLigneHT); //affectation du tr dans table
+
+			var vide1 = document.createElement("td"); //creation d'une cellule vide
+			vide1.innerHTML ="";
+			newLigneHT.appendChild(vide1); //affectation du td dans table
+			vide1.className = "td1";
+			var vide2 = document.createElement("td"); //creation d'une ligne vide
+			vide2.innerHTML ="";
+			newLigneHT.appendChild(vide2); //affectation du td dans table
+			vide2.className = "td2";
+			var vide3 = document.createElement("td"); //creation d'une ligne vide
+			vide3.innerHTML ="HT";
+			newLigneHT.appendChild(vide3); //affectation du td dans table
+			vide3.className = "td2";
+			var totalHT = document.createElement("td"); //creation d'une ligne vide
+			totalHT.id ="idht";
+			newLigneHT.appendChild(totalHT); //affectation du td dans table
+			totalHT.className = "td4";
+			var vide4 = document.createElement("td"); //creation d'une cellule vide
+			vide1.innerHTML ="";
+			newLigneHT.appendChild(vide4); //affectation du td dans table
+			vide4.className = "td5";
+
+			afficherTotal(totalPanier);
+
+}
 
 function afficherTotal(totalPanier) {
 
-		var finaliser = document.getElementById('btn-finaliser');
+	var finaliser = document.getElementById('btn-finaliser');
 
-		if (totalPanier > 0) {
+	var tPanier = document.getElementById("idPanier");
+	for (var i = 0; i < panier.length; i++) {
+		var ligne = parseFloat(document.getElementById("tLigne"+i).innerHTML);
+		totalPanier += ligne;
+	}
+	var ligneTTC = document.getElementById("ligneTTC");
+	console.log(ligneTTC);
+	document.getElementById("idttc").innerHTML = totalPanier;
+	var ht = totalPanier / 1.20;
+	var tva = totalPanier - ht;
+	var ligneTVA = document.getElementById("ligneTVA");
+	console.log(ligneTVA);
+	document.getElementById("idtva").innerHTML = tva;
+	var ligneHT = document.getElementById("ligneHT");
+	console.log(ligneHT);
+	document.getElementById("idht").innerHTML = ht;
 
-		finaliser.className ="boutton-achat affiche";
-
-		var titre = document.getElementById("idTitre");
-		var titreH3 = document.createElement("h3");
-		titreH3.innerHTML = "Votre panier";
-		titre.appendChild(titreH3);
-
-		var tablePanier = document.getElementById("idPanier");
-		var newLigneTotal = document.createElement("tr");
-		newLigneTotal.id = "idTotal"; //creation d'une ligne vide
-		tablePanier.appendChild(newLigneTotal); //affectation du tr dans table
-
-		var vide1 = document.createElement("td"); //creation d'une cellule vide
-		vide1.innerHTML ="";
-		newLigneTotal.appendChild(vide1); //affectation du td dans table
-		vide1.className = "td1";
-		var vide2 = document.createElement("td"); //creation d'une ligne vide
-		vide2.innerHTML ="";
-		newLigneTotal.appendChild(vide2); //affectation du td dans table
-		vide2.className = "td2";
-		var vide3 = document.createElement("td"); //creation d'une ligne vide
-		vide3.innerHTML ="A Payer";
-		newLigneTotal.appendChild(vide3); //affectation du td dans table
-		vide3.className = "td2";
-		var totalCde = document.createElement("td"); //creation d'une ligne vide
-		totalCde.innerHTML=totalPanier + " €";
-		newLigneTotal.appendChild(totalCde); //affectation du td dans table
-		totalCde.className = "td4";
-		var vide4 = document.createElement("td"); //creation d'une cellule vide
-		vide1.innerHTML ="";
-		newLigneTotal.appendChild(vide4); //affectation du td dans table
-		vide4.className = "td5";
+	if (totalPanier != 0) {
+		var titreh3 = document.getElementById('panier');
+		var titreh3vide = document.getElementById('paniervide');
+		titreh3.className = "affiche";
+		titreh3vide.className = "cache";
+		finaliser.className = "boutton-achat affiche";
 		}
 		else
 		{
+		var titreh3 = document.getElementById('panier');
+		var titreh3vide = document.getElementById('paniervide');
+		titreh3.className = "cache";
+		titreh3vide.className = "affiche";
 		finaliser.className = "cache";
-		var titre = document.getElementById("idTitre");
-		var titreH3 = document.createElement("h3");
-		titreH3.innerHTML = "Votre panier est vide";
-		titre.appendChild(titreH3);
-
 		}
-	}
+}
 
 function generatorNotice() {
 	for (var i = 0; i < listeAvis.length; i++) {

@@ -76,7 +76,9 @@ h3 {
     margin: 0 1em;
     line-height: 1em;
 }
-
+.panier {
+    margin-bottom: 15px;
+}
 .cache {
     display: none;
 }
