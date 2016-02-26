@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Autour Du Vin</title>
+    <script src="js/jquery.js"></script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -15,11 +16,12 @@
     <script src="js/param.js"></script>
     <script src="js/bdd_vin.js"></script>
     <script src="js/db-avis.js"></script>
-    <script src="js/panier.js"></script>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/panier.js"></script> -->
+    <script src="js/fiche.js"></script>
 
   </head>
-  <body onload="readParameter(),generatorNotice()">
+    <!-- <body onload="readParameter(),generatorNotice()"> -->
+      <body>
     <!-- <h1>Fiche produit</h1> -->
     <div class="container">
       <div class="row">
@@ -62,14 +64,14 @@
             <div class="col-md-4 center">
               <h3>Quantité</h3>
                 <div class="button">
-                  <button  onclick="moins()" class="moins" type="button" name="button">-</button>
+                  <button  id="moins" class="moins" type="button" name="button">-</button>
                   <button id="quantity" class="nbr" type="text" name="button">1</button>
-                  <button onclick="plus()" class="plus" type="button" name="button">+</button>
+                  <button id="plus" class="plus" type="button" name="button">+</button>
                 </div>
             </div>
 
             <div class="col-md-4 panier">
-              <a onclick="ajoutPanier()" href="catalogue.html" class="ajout">
+              <a id="ajoutPanier" href="catalogue.html" class="ajout">
                   <i class="fa fa-shopping-basket"></i>Ajouter
               </a>
             </div>
@@ -132,7 +134,5 @@
             <p class="text-uppercase"><small>© Copyright 2016 - P.Sarrus T.Martin D.Klementik - <a class="lien-footer" href="index.html">autour du vin - le domaine codi</a></small></p>
           </div>
         </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
